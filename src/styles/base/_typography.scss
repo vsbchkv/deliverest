@@ -1,0 +1,45 @@
+a {
+  // color: $blueLight; TODO: color
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+
+  a {
+    color: inherit;
+  }
+}
+
+p + p {
+  margin-top: vw($mobile, 10px);
+
+  @media screen and (min-width: $desktop) {
+    margin-top: rem(16);
+  }
+
+  @media screen and (min-width: $desktopMax) {
+    margin-top: rem(40);
+  }
+}
+
+ul:not([class]) {
+  @extend %list-styled;
+  margin: vw($mobile, 6px) 0 0;
+
+  @media screen and (min-width: $desktop) {
+    margin-top: rem(12);
+    letter-spacing: 0.02em;
+  }
+}

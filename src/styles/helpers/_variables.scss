@@ -1,0 +1,65 @@
+/************** Fonts *************/
+
+$fontBase1: 'Roboto', sans-serif;
+$baseFontSize: 16px;
+
+/************** Breakpoints *************/
+
+$mobile: 320px;
+$desktop: 1440px;
+$desktopMax: 1920px; // TODO: max
+
+$mobileWrapper: 290px;
+$tabletWrapper: 938px;
+$desktopWrapper: 1138px;//953px
+$desktopMaxWrapper: 1108px;
+
+$mobilePadding: 12px;
+$tabletPadding: 15px;
+$desktopPadding: 15px;
+$desktopMaxPadding: 15px;
+
+/************** Colors *************/
+
+$black: #000;
+$white: #fff;
+$purple: #7e60ec;
+$gray: #373737;
+$darkGray: #170b45;
+$lightGray: #cfcfcf;
+
+$accentColor: $purple;
+
+$defaultText: $gray;
+$borderColor: $lightGray;
+
+// $gray: #616161;
+// $grayDark: #16181e;
+// $grayLight: #e1e1e1;
+// $grayLight2: #828282;
+// $grayLight3: #bdbdbd;
+// $grayLight4: #717171;
+// $grayLightest: #f7f7f7;
+// $bluePrimary: #082664;
+// $blueSecondary: #23407c;
+// $blueLighten: #072e75;
+// $blueLight: #2f80ed;
+// $blueDark: #061e50;
+// $blueGray: #e2ebff;
+// $blueGrayLight: #f9fbff;
+// $blueHover: #0a307e;
+// $blueActive: #082258;
+// $blueDisabled: rgba($bluePrimary, 0.3);
+// $green: #a2c628;
+// $greenHover: #afd72a;
+// $greenActive: #98b927;
+// $greenDisabled: #d7e2b3;
+
+/************** Common *************/
+
+$borderRadius: 5px;
+$lineBorder: 1px solid rgba($black, 0.08);
+$imagesSource: '../media/images/';
+$imagesSourceProd: '/static/core/img/images/';
+$iconsSource: '../media/icons/'; //url("#{$iconsSource}arrow-right-white.svg")
+$iconsSourceProd: '/static/core/img/icons/';

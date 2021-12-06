@@ -1,0 +1,116 @@
+/************** Default mixins *************/
+@use 'sass:math';
+// px to rem
+@function strip-units($pxval) {
+  @return math.div($pxval, ($pxval * 0 + 1));
+}
+
+@function rem($pxval) {
+  @if not unitless($pxval) {
+    $pxval: strip-units($pxval);
+  }
+
+  $base: $baseFontSize;
+  @if not unitless($base) {
+    $base: strip-units($base);
+  }
+  @return (math.div($pxval, $base)) * 1rem;
+}
+
+// px to vw
+@function strip-units($pxval) {
+  @return math.div($pxval, ($pxval * 0 + 1));
+}
+
+@function vw($base, $pxval) {
+  @if not unitless($pxval) {
+    $pxval: strip-units($pxval);
+  }
+
+  @if not unitless($base) {
+    $base: strip-units($base);
+  }
+  @return (math.div($pxval, $base)) * 100vw;
+}
+
+@mixin img-container() {
+  position: relative;
+
+  & img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+}
+
+@mixin bordered-box() {
+  background: $blueGrayLight;
+  border: 1px solid $borderColor;
+  border-radius: $borderRadius;
+}
+
+%button-unstyled {
+  padding: 0;
+  background: none no-repeat;
+  appearance: none;
+  border: 0;
+}
+
+%input-unstyled {
+  padding: 0;
+  background: none no-repeat;
+  appearance: none;
+  border: 0;
+}
+
+%img-contained {
+  display: block;
+  max-width: 100%;
+  border-radius: $borderRadius;
+}
+
+%button-link {
+  @extend %button-unstyled;
+  display: inline;
+  text-align: left;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+%list-styled { // TODO: list styles
+  list-style: none;
+
+  li {
+    position: relative;
+    padding: vw($mobile, 2px) 0 vw($mobile, 2px) vw($mobile, 17px);
+
+    @media screen and (min-width: $desktop) {
+      padding: rem(4) 0 rem(4) rem(17);
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: vw($mobile, 13px);
+      left: 0;
+      width: vw($mobile, 6px);
+      height: vw($mobile, 6px);
+      background-color: $black;
+      border-radius: 50%;
+
+      @media screen and (min-width: $desktop) {
+        top: rem(13);
+        width: rem(6);
+        height: rem(6);
+      }
+    }
+  }
+}

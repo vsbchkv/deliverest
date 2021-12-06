@@ -1,0 +1,50 @@
+.text-field {
+  @extend %input-unstyled;
+  padding: 0 vw($mobile, 16px);
+  height: vw($mobile, 43px); //48px
+  font-size: vw($mobile, 14px);
+  color: $defaultText;
+  // letter-spacing: .015em;
+  // background-color: rgba(9, 19, 33, 0.06);
+  border-radius: $borderRadius;
+
+  @media screen and (min-width: $desktop) {
+    padding: 0 rem(16);
+    height: rem(43);
+    font-size: rem(14);
+  }
+
+  @at-root textarea#{&} {
+    resize: vertical;
+    padding-top: vw($mobile, 11px);
+    min-height: vw($mobile, 105px);
+
+    @media screen and (min-width: $desktop) {
+      padding-top: rem(11);
+      min-height: rem(105);
+    }
+  }
+
+  &::placeholder {
+    // color: $grayLight2;
+    // letter-spacing: .0002em;
+  }
+
+  &--error {
+    // box-shadow: 0 0 0 1px rgba(#F43319, 0.8);
+  }
+  &:focus {
+    background-color: rgba(9, 19, 33, 0.06);
+
+    &::placeholder {
+      // color: $grayLight3;
+    }
+  }
+  &:disabled {
+    // background-color: $grayLightest;
+
+    &::placeholder {
+      opacity: 0.5;
+    }
+  }
+}
