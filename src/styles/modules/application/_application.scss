@@ -1,0 +1,31 @@
+.application {
+  padding: vw($mobile, 40px) 0 vw($mobile, 10px);
+  font-size: 14px;
+  color: $white;
+  background: $green linear-gradient(to top, #7d5fea 0%, #302063 100%);
+
+  @media screen and (max-width: $desktop - 1px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: rem(107) 0;
+    font-size: 26px;
+  }
+
+  &__title {
+    margin-bottom: vw($mobile, 15px);
+    color: inherit;
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: rem(10);
+    }
+  }
+
+  &__text {}
+
+  &__list {
+    text-align: left;
+    font-weight: 300;
+  }
+}

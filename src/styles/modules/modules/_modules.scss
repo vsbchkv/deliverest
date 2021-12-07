@@ -1,0 +1,57 @@
+.modules {
+  padding: vw($mobile, 40px) 0  vw($mobile, 36px);
+
+  @media screen and (min-width: $desktop) {
+    padding: rem(110) 0 rem(29);
+  }
+
+  &__title {
+    margin: 0 5% vw($mobile, 40px);
+    text-align: center;
+
+    @media screen and (min-width: $desktop) {
+      margin: 0 5% rem(91);
+    }
+  }
+
+  &__list {
+    line-height: 1.4;
+    font-size: vw($mobile, 18px);
+
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      font-size: rem(26);
+      font-weight: bold;
+    }
+  }
+
+  &__item {
+    //flex: 0 0 210px;
+
+    @media screen and (max-width: $desktop - 1px) {
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      flex: 0 0 210px;
+      margin: 0 45px 91px;
+      text-align: center;
+    }
+  }
+
+  &__pic {
+    margin-right: 16px;
+
+    @media screen and (max-width: $desktop - 1px) {
+      max-width: vw($mobile, 32px);
+    }
+    @media screen and (min-width: $desktop) {
+      display: block;
+      margin: 0 auto 17px;
+    }
+  }
+}

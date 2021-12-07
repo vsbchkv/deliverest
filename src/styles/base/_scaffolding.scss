@@ -80,10 +80,10 @@ body {
   padding-right: vw($mobile, $mobilePadding);
   padding-left: vw($mobile, $mobilePadding);
 
-  @media screen and (min-width: $desktop) {
+  /*@media screen and (min-width: $desktop) {
     padding-right: rem($tabletPadding);
     padding-left: rem($tabletPadding);
-  }
+  }*/
 
   @media screen and (min-width: $desktop) {
     max-width: $desktopWrapper;
@@ -107,6 +107,10 @@ body {
   @media screen and (min-width: $desktop) {
     padding-top: rem(75);
   }
+}
+
+.section-title {
+  @extend %section-title;
 }
 
 .area-clickable {

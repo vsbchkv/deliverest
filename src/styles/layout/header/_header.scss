@@ -1,14 +1,14 @@
 .header {
   position: fixed;
   top: 0;
-  left: 0;
   right: 0;
-  color: $white;
-  height: vw($mobile, 65px);
+  left: 0;
   z-index: 2;
+  height: vw($mobile, 65px);
+  color: $white;
 
   @media screen and (min-width: $desktop) {
-    height: rem(100); // TODO: check desktop
+    height: rem(125); // TODO: check desktop
   }
 
   &__locales {
@@ -26,16 +26,16 @@
 
 .header__burger {
   @extend %button-unstyled;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  align-self: center;
   width: vw($mobile, 16px);
   height: vw($mobile, 10px);
-  align-self: center;
+  background-color: inherit;
   border: 0;
   cursor: pointer;
-  background-color: inherit;
-  position: relative;
 
   &::after {
     content: '';
@@ -59,14 +59,16 @@
       background-color: $white;
       transition: top 0.25s ease-out, transform 0.25s ease-out;
     }
+
     &:before {
+      content: '';
       position: absolute;
-      content: "";
       top: vw($mobile, -4px);
     }
+
     &:after {
+      content: '';
       position: absolute;
-      content: "";
       top: vw($mobile, 4px);
     }
   }
@@ -76,10 +78,12 @@
       & {
         background-color: transparent;
       }
+
       &:before {
         top: 0;
         transform: rotate(-45deg);
       }
+
       &:after {
         top: 0;
         transform: rotate(45deg);
@@ -93,8 +97,9 @@
 }
 
 .header-nav {
-  background-color: $accentColor;
   padding: vw($mobile, 10px) 0;
+  background-color: $accentColor;
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.56);
 
   @media screen and (min-width: $desktop) {
     padding: 21px 0;
@@ -108,6 +113,7 @@
 
   &__list {
     display: none;
+
     @media screen and (min-width: $desktop) {
       display: flex;
     }

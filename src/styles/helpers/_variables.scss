@@ -11,7 +11,7 @@ $desktopMax: 1920px; // TODO: max
 
 $mobileWrapper: 290px;
 $tabletWrapper: 938px;
-$desktopWrapper: 1138px;//953px
+$desktopWrapper: 1856px;//953px //1138px
 $desktopMaxWrapper: 1108px;
 
 $mobilePadding: 12px;
@@ -24,9 +24,11 @@ $desktopMaxPadding: 15px;
 $black: #000;
 $white: #fff;
 $purple: #7e60ec;
+$lighterPurple: #8467ee;
 $gray: #373737;
 $darkGray: #170b45;
 $lightGray: #cfcfcf;
+$green: #55edb1;
 
 $accentColor: $purple;
 
@@ -50,7 +52,6 @@ $borderColor: $lightGray;
 // $blueHover: #0a307e;
 // $blueActive: #082258;
 // $blueDisabled: rgba($bluePrimary, 0.3);
-// $green: #a2c628;
 // $greenHover: #afd72a;
 // $greenActive: #98b927;
 // $greenDisabled: #d7e2b3;
