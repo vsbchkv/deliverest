@@ -113,6 +113,15 @@ body {
   @extend %section-title;
 }
 
+.section-desc {
+  font-size: vw($mobile, 14px);
+  text-align: center;
+
+  @media screen and (min-width: $desktop) {
+    font-size: rem(26);
+  }
+}
+
 .area-clickable {
   &:after {
     content: '';

@@ -1,0 +1,25 @@
+.couriers {
+  padding-top: vw($mobile, 48px);
+
+  &__title {
+    margin-bottom: vw($mobile, 26px);
+  }
+
+  &__desc {
+    margin-bottom: vw($mobile, 45px);
+  }
+
+  &__list {
+    @extend %list-unstyled;
+  }
+
+  &__list-item {
+    display: flex;
+  }
+
+  &__list-pic {
+    width: vw($mobile, 24px);
+    height: vw($mobile, 24px);
+
+  }
+}
