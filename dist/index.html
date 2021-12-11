@@ -10,16 +10,16 @@
 </head>
 <body>
 <header class="header">
-  <div class="header__locales">
-    <div class="content-wrapper">
-      Страна: Россия
-      Язык: Русский
-      <a class="lang-switcher__link" href="#">EN</a> | <span class="lang-switcher__current">RU</span>
+  <div class="header-locales header__locales">
+    <div class="content-wrapper header-locales__wrapper">
+      <div class="header-locales__item">Страна: Россия</div>
+      <div class="header-locales__item">Язык: Русский</div>
+      <!-- <a class="lang-switcher__link" href="#">EN</a> | <span class="lang-switcher__current">RU</span> -->
     </div>
   </div>
   <nav class="header-nav header__nav">
     <div class="content-wrapper header-nav__navigation">
-      <a href="/"><img class="header__logo" src="media/images/logo.svg" alt=""></a>
+      <a href="/" class="header__home-link"><img class="header__logo" src="media/images/logo.svg" alt=""></a>
       <ul class="header-nav__list">
         <li class="header-nav__item header-nav__item--active">
           <a class="header-nav__link header-nav__link--active" href="#">Модули системы</a>
@@ -34,7 +34,7 @@
       <button class="header__burger" type="button">
         <span></span>
       </button>
-      <button class="button button--secondary button--small" type="button">Запрос демоверсии</button>
+      <button class="button button--primary header__btn" type="button">Запрос демоверсии</button>
     </div>
   </nav>
 </header>
