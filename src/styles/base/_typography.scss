@@ -22,7 +22,7 @@ h6 {
 }
 
 p + p {
-  margin-top: vw($mobile, 10px);
+  margin-top: vw($mobile, 13px);
 
   @media screen and (min-width: $desktop) {
     margin-top: rem(16);

@@ -1,0 +1,44 @@
+.website {
+  padding: vw($mobile, 43px) 0 vw($mobile, 43px);
+  text-align: center;
+
+  @media screen and (min-width: $desktop) {
+    position: relative;
+    padding: rem(153) 0 rem(268);
+    text-align: left;
+  }
+
+  &__content {
+
+    @media screen and (min-width: $desktop) {
+      position: relative;
+      margin: 0 31.5% 0 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: vw($mobile, 20px);
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: rem(39);
+    }
+  }
+
+  &__pic {
+    width: vw($mobile, 298px);
+    margin: vw($mobile, 26px) auto vw($mobile, 27px);
+
+    @media screen and (min-width: $desktop) {
+      position: absolute;
+      top: -217px;
+      right: -1176px;
+      width: 1251px;
+      margin: 0;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}

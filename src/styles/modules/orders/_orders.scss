@@ -1,0 +1,92 @@
+.orders {
+  padding: vw($mobile, 40px) 0 vw($mobile, 7px);
+  text-align: center;
+  //font-size: vw($mobile, 14px);
+  color: $white;
+  background-color: #20183e;
+
+  @media screen and (min-width: $desktop) {
+    position: relative;
+    padding: rem(209) 0 rem(60);
+    text-align: left;
+    //font-size: rem(26);
+    /*background: #20183e url('../media/images/grad.png') no-repeat 0 0;*/
+  }
+
+  &__content {
+
+    @media screen and (min-width: $desktop) {
+      position: relative;
+      margin: 0 0 0 53.5%;
+    }
+  }
+
+  &__title {
+    margin-bottom: vw($mobile, 19px);
+    color: inherit;
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: rem(34);
+    }
+  }
+
+  &__text {
+    margin-bottom: vw($mobile, 22px);
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 55px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    line-height: 1.15;
+    font-weight: 300;
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    width: 50%;
+    min-height: vw($mobile, 48px);
+    margin-bottom: vw($mobile, 10px);
+
+    @media screen and (min-width: $desktop) {
+      align-items: center;
+      min-height: 50px;
+      margin-bottom: 64px;
+    }
+  }
+
+  &__icon {
+    width: vw($mobile, 24px);
+    margin-top: vw($mobile, 3px);
+    margin-right: vw($mobile, 15px);
+
+    @media screen and (min-width: $desktop) {
+      width: 50px;
+      margin-top: 0;
+      margin-right: 15px;
+    }
+  }
+
+  &__pic {
+    width: vw($mobile, 320px);
+    margin: vw($mobile, 7px) vw($mobile, -12px) vw($mobile, 27px);
+
+    @media screen and (min-width: $desktop) {
+      position: absolute;
+      top: -176px;
+      left: -1206px;
+      width: 1020px;
+      margin: 0;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}

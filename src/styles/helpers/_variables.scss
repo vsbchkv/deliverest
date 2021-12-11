@@ -6,12 +6,12 @@ $baseFontSize: 16px;
 /************** Breakpoints *************/
 
 $mobile: 320px;
-$desktop: 1440px;
+$desktop: 1025px; //1440px
 $desktopMax: 1920px; // TODO: max
 
 $mobileWrapper: 290px;
 $tabletWrapper: 938px;
-$desktopWrapper: 1856px;//953px //1138px
+$desktopWrapper: 1886px;//953px //1138px
 $desktopMaxWrapper: 1108px;
 
 $mobilePadding: 12px;
@@ -61,6 +61,4 @@ $borderColor: $lightGray;
 $borderRadius: 5px;
 $lineBorder: 1px solid rgba($black, 0.08);
 $imagesSource: '../media/images/';
-$imagesSourceProd: '/static/core/img/images/';
 $iconsSource: '../media/icons/'; //url("#{$iconsSource}arrow-right-white.svg")
-$iconsSourceProd: '/static/core/img/icons/';
