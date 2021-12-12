@@ -12,10 +12,10 @@
 
 <body>
   <header class="header">
-  <div class="header-locales header__locales">
-    <div class="content-wrapper header-locales__wrapper">
-      <div class="header-locales__item">Страна: Россия</div>
-      <div class="header-locales__item">Язык: Русский</div>
+  <div class="locales header__locales">
+    <div class="content-wrapper locales__wrapper">
+      <div class="locales__item">Страна: Россия</div>
+      <div class="locales__item">Язык: Русский</div>
       <!-- <a class="lang-switcher__link" href="#">EN</a> | <span class="lang-switcher__current">RU</span> -->
     </div>
   </div>
@@ -36,7 +36,7 @@
       <button class="header__burger" type="button">
         <span></span>
       </button>
-      <button class="button button--secondary header__btn js-open-modal" type="button">Запрос демоверсии</button>
+      <button class="button button--secondary header__btn" type="button">Запрос демоверсии</button>
     </div>
   </nav>
 </header>
@@ -47,7 +47,7 @@
         <h1 class="intro__title">
           Облачная платформа для&nbsp;службы доставки еды
         </h1>
-        <button class="button button--primary intro__btn js-open-modal" type="button">Запрос демоверсии</button>
+        <button class="button button--primary intro__btn" type="button">Запрос демоверсии</button>
       </div>
     </section>
     <section class="modules">
@@ -238,6 +238,14 @@
               — все это обеспечит четкую и бесперебойную работу вашему производству.</p>
 
           </div>
+          <div class="kitchen__pic">
+            <picture>
+              <!--TODO: screen breakpoints-->
+              <!--<source type="image/webp" srcset="media/images/map-phone-mob@1x.webp 1x" media="(max-width: 560px)">-->
+              <source srcset="media/images/kitchen-mob@1x.png 1x" media="(max-width: 560px)">
+              <img src="media/images/kitchen.png" srcset="media/images/kitchen.png 1x" alt="Изображения">
+            </picture>
+          </div>
         </div>
       </div>
     </section>
@@ -278,77 +286,72 @@
         <li><a href="#">Viber</a></li>
         <li><a href="#">Telegram</a></li>
       </ul>
-      <button class="button button--primary contacts__btn js-open-modal" type="button">Запрос демоверсии</button>
+      <button class="button button--primary contacts__btn" type="button">Запрос демоверсии</button>
     </section>
   </main>
   <footer class="footer">
-  <a href="#">Мобильное приложение</a>
-  <a href="#">Современный сайт</a>
-  <a href="#">Управление заказами</a>
-  <a href="#">Управление курьерами</a>
-  <a href="#">Управление кухней</a>
-  <a href="#">Аналитическая платформа</a>
-  <a href="#">Платформа маркетинга</a>
-  <a href="#">Финансовый учет</a>
-  Страна: Россия
-  Язык: Русский
-  <a href="mailto:contact@deliverest.io">contact@deliverest.io</a>
-  <a href="#">Партнерам</a>
-  &copy; 2014 — 2021 Deliverest, Автоматизация службы доставки еды
+  <div class="locales footer__locales">
+    <div class="content-wrapper locales__wrapper">
+      <div class="locales__item">Страна: Россия</div>
+      <div class="locales__item">Язык: Русский</div>
+      <!-- <a class="lang-switcher__link" href="#">EN</a> | <span class="lang-switcher__current">RU</span> -->
+    </div>
+  </div>
+  <nav class="content-wrapper footer__nav">
+    <div class="footer__head">
+      <img class="footer__logo" src="media/images/logo.svg" alt="">
+      <div class="footer__contacts">
+        <a class="footer__link footer__link--mailto" href="mailto:contact@deliverest.io">contact@deliverest.io</a>
+        <a class="footer__link" href="#">Партнерам</a>
+      </div>
+    </div>
+    <ul class="footer__menu">
+      <li class="footer__menu-item"><a href="#" class="footer__link">Мобильное приложение</a></li>
+      <li class="footer__menu-item"><a href="#" class="footer__link">Современный сайт</a></li>
+      <li class="footer__menu-item"><a href="#" class="footer__link">Управление заказами</a></li>
+      <li class="footer__menu-item"><a href="#" class="footer__link">Управление курьерами</a></li>
+      <li class="footer__menu-item"><a href="#" class="footer__link">Управление кухней</a></li>
+      <li class="footer__menu-item"><a href="#" class="footer__link">Аналитическая платформа</a></li>
+      <li class="footer__menu-item"><a href="#" class="footer__link">Платформа маркетинга</a></li>
+      <li class="footer__menu-item"><a href="#" class="footer__link">Финансовый учет</a></li>
+    </ul>
+    <ul class="social">
+      <li class="social__item">
+        <a href="#" class="social__lint">
+          <img src="media/icons/social/instagram.svg" alt="" class="social__icon">
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__lint">
+          <img src="media/icons/social/telegram.svg" alt="" class="social__icon">
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__lint">
+          <img src="media/icons/social/telegram.svg" alt="" class="social__icon">
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__lint">
+          <img src="media/icons/social/telegram.svg" alt="" class="social__icon">
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__lint">
+          <img src="media/icons/social/telegram.svg" alt="" class="social__icon">
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__lint">
+          <img src="media/icons/social/telegram.svg" alt="" class="social__icon">
+        </a>
+      </li>
+    </ul>
+    &copy; 2014 — 2021 Deliverest, Автоматизация службы доставки еды
+  </nav>
 </footer>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="js/main.js"></script>
-
-  <div class="layout">
-    <div class="modal">
-      <button class="modal__close" type="button" title="Закрыть">
-        <img src="media/images/icon-close.svg" alt="">
-      </button>
-      <div class="modal__content form-request">
-        <h3 class="form-request__title">Запрос демоверсии</h3>
-        <div class="form-request__text">
-          <p>Вы можете оставить свои контактные данные и все, что сочтете
-            нужным, а какой-то чувак позвонит вам или напишет, чтобы обговорить
-            всю херню. После чего по Скайпу покажет нашу систему и попытается
-            вас впечатлить.</p>
-        </div>
-        <form class="form-request__form">
-          <div class="field">
-            <label class="floating-label" for="name">
-              <input class="text-field floating-label__input" name="name" id="name" placeholder="Как вас зовут*" value="Константин">
-              <span class="floating-label__label">Как вас зовут*</span>
-            </label>
-          </div>
-          <div class="field">
-            <label class="floating-label" for="country">
-              <input class="text-field floating-label__input" name="country" id="country" placeholder="Страна*" value="Россия">
-              <span class="floating-label__label">Страна*</span>
-            </label>
-          </div>
-          <div class="field">
-            <label class="floating-label" for="email">
-              <input class="text-field floating-label__input" name="email" id="email" placeholder="Электронная почта*">
-              <span class="floating-label__label">Электронная почта*</span>
-            </label>
-          </div>
-          <div class="field">
-            <span class="pre-label">+7</span>
-            <label class="floating-label" for="phone">
-              <input class="text-field floating-label__input" name="phone" id="phone" placeholder="Телефон*">
-              <span class="floating-label__label">Телефон*</span>
-            </label>
-          </div>
-          <div class="field field--full-width">
-            <label class="floating-label" for="comments">
-              <textarea class="text-field floating-label__input" name="comments" id="comments" placeholder="Комментарий"></textarea>
-              <span class="floating-label__label">Комментарий</span>
-            </label>
-          </div>
-          <button class="button button--primary button--small form-request__btn" type="button">Отправить</button>
-        </form>
-      </div>
-    </div>
-  </div>
 </body>
 
 </html>
