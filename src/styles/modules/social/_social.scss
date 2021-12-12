@@ -1,0 +1,15 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: vw($mobile, -20px);
+  margin-top: vw($mobile, -20px);
+
+  &__item {
+    margin-left: vw($mobile, 20px);
+    margin-top: vw($mobile, 20px);
+  }
+  &__icon {
+    width: 32px;
+    height: 32px;
+  }
+}

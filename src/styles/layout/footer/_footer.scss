@@ -1,3 +1,52 @@
 .footer {
+  background-color: #170b45;
+  &__locales {
+    background-color: $black;
+    font-size: vw($mobile, 12px);
+    @media screen and (min-width: $desktop) {
+      font-size: rem(18);
+    }
+  }
 
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: vw($mobile, 22px);
+  }
+
+  &__logo,
+  &__contacts {
+    width: calc(50% - vw($mobile, 12px));
+  }
+
+  &__nav {
+    padding-top: vw($mobile, 24px);
+  }
+
+  &__link {
+    font-size: vw($mobile, 14px);
+    display: block;
+    line-height: 1.4;
+
+    &, &:hover {
+      text-decoration: none;
+    }
+
+    &--mailto {
+      color: $white;
+    }
+  }
+
+  &__menu {
+    column-count: 2;
+    column-gap: vw($mobile, 5px);
+    margin-bottom: vw($mobile, 22px);
+  }
+
+  &__menu-item {
+    & + & {
+      margin-top: 5px;
+    }
+  }
 }
