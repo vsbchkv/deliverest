@@ -1,5 +1,5 @@
 .intro {
-  padding: vw($mobile, 67px) 0 vw($mobile, 298px);
+  padding: vw($mobile, 40px) 0 vw($mobile, 298px);
   color: $white;
   background: $darkGray;
 
@@ -8,7 +8,7 @@
   }
 
   @media screen and (min-width: $desktop) {
-    padding: rem(186) 0 rem(166);
+    padding: rem(193) 0 rem(168);
   }
 
   @media screen and (min-width: $desktopMax) {
@@ -26,10 +26,15 @@
 
     @media screen and (min-width: $desktop) {
       margin-bottom: rem(84);
-      max-width: 80%;
+      max-width: 72%;
       font-size: rem(84);
     }
   }
 
-  &__btn {}
+  &__btn {
+    padding: 0 vw($mobile, 12px);
+    @media screen and (min-width: $desktop) {
+      padding: 0 rem(57);
+    }
+  }
 }

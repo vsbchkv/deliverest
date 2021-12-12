@@ -1,12 +1,71 @@
 .couriers {
-  padding-top: vw($mobile, 48px);
+  padding-top: vw($mobile, 40px);
+  @media screen and (max-width: $desktop - 1) {
+    overflow-x: hidden;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: rem(175);
+    padding-bottom: rem(188);
+  }
+
+  &__content {
+    position: relative;
+    @media screen and (min-width: $desktop) {
+      margin: 0 66.5% 0 0;
+    }
+  }
+
+  &__pic {
+    position: relative;
+    z-index: -1;
+    top: vw($mobile, -70px);
+
+    @media screen and (max-width: $desktop - 1) {
+      max-width: 100vw;
+      height: 436px;
+      margin: 0 vw($mobile, -12px);
+    }
+    img {
+      display: block;
+      width: 100%;
+
+      @media screen and (max-width: $desktop - 1) {
+        position: relative;
+        width: 282%;
+        left: -86%;
+        top: vw($mobile, -38px);
+      }
+    }
+
+    @media screen and (min-width: $desktop) {
+      position: absolute;
+      top: -175px;
+      right: -1461px;
+      width: 1798px;
+    }
+  }
 
   &__title {
-    margin-bottom: vw($mobile, 26px);
+    margin-bottom: vw($mobile, 22px);
+    @media screen and (max-width: $desktop - 1) {
+      text-align: center;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: rem(40);
+    }
   }
 
   &__desc {
-    margin-bottom: vw($mobile, 45px);
+    margin-bottom: vw($mobile, 40px);
+    @media screen and (max-width: $desktop - 1) {
+      text-align: center;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: rem(74);
+    }
   }
 
   &__list {
@@ -15,11 +74,30 @@
 
   &__list-item {
     display: flex;
+    line-height: 1;
+
+    @media screen and (min-width: $desktop) {
+      align-items: center;
+    }
+
+    & + & {
+      margin-top: vw($mobile, 34px);
+
+      @media screen and (min-width: $desktop) {
+        margin-top: 64px;
+      }
+    }
   }
 
   &__list-pic {
     width: vw($mobile, 24px);
     height: vw($mobile, 24px);
+    margin-right: vw($mobile, 15px);
 
+    @media screen and (min-width: $desktop) {
+      width: rem(48);
+      height: rem(48);
+      margin-right: rem(23);
+    }
   }
 }

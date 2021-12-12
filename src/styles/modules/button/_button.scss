@@ -11,15 +11,12 @@
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
   color: $white;
   text-decoration: none;
-  //line-height: vw($mobile, 48px);
-  // background-color: $bluePrimary;
   box-shadow: 0 16px 45px 3px rgba(86, 51, 154, 0.5);
   transition: background-color 180ms ease-out, color 180ms ease-out; // todo mixin
 
   @media screen and (min-width: $desktop) {
     height: rem(74);
     padding: 0 rem(60);
-    //line-height: rem(48);
     font-size: rem(36);
     letter-spacing: 0.0045em;
   }

@@ -34,7 +34,7 @@
       <button class="header__burger" type="button">
         <span></span>
       </button>
-      <button class="button button--primary header__btn" type="button">Запрос демоверсии</button>
+      <button class="button button--secondary header__btn" type="button">Запрос демоверсии</button>
     </div>
   </nav>
 </header>
@@ -189,25 +189,33 @@
     </div>
   </section>
   <section class="couriers">
-  <div class="content-wrapper">
-    <h2 class="section-title couriers__title">Управление курьерами</h2>
-    <div class="section-desc couriers__desc">
-      <p>Назначайте курьеров на заказы в один клик, через список заказов или на карте
-      </p>
+    <div class="content-wrapper">
+      <div class="couriers__content">
+        <h2 class="section-title couriers__title">Управление курьерами</h2>
+        <div class="section-desc couriers__desc">
+          <p>Назначайте курьеров на заказы в один клик, через список заказов или на карте
+          </p>
+        </div>
+        <ul class="couriers__list">
+          <li class="couriers__list-item"><img class="couriers__list-pic" src="media/images/icon.png" alt="">Курьеры на
+            карте</li>
+          <li class="couriers__list-item"><img class="couriers__list-pic" src="media/images/icon.png" alt="">Приложение
+            для курьера</li>
+          <li class="couriers__list-item"><img class="couriers__list-pic" src="media/images/icon.png" alt="">Подсветка
+            тех, кто опаздывает</li>
+        </ul>
+        <div class="couriers__pic">
+          <picture>
+            <source srcset="media/images/map-phone-mob@1x.png 1x" media="(max-width: 560px)">
+            <!-- <source type="image/webp" srcset="media/images/map-phone@2x.webp 1x"> -->
+            <img src="media/images/map-phone@1x.png" srcset="media/images/map-phone@1x.png 1x" alt="Изображения">
+          </picture>
+        </div>
+      </div>
     </div>
-    <ul class="couriers__list">
-      <li class="couriers__list-item"><img class="couriers__list-pic" src="media/images/icon.png" alt="">Курьеры на
-        карте</li>
-      <li class="couriers__list-item"><img class="couriers__list-pic" src="media/images/icon.png" alt="">Приложение
-        для курьера</li>
-      <li class="couriers__list-item"><img class="couriers__list-pic" src="media/images/icon.png" alt="">Подсветка
-        тех, кто опаздывает</li>
-    </ul>
-  </div>
-</section>
-
+  </section>
   <section class="kitchen">
-    <h2>Управление кухней</h2>
+    <h2 class="section-title kitchen__title">Управление кухней</h2>
     <p>Наша система разработана для профессиональных служб доставки еды с сотнями и тысячами заказов в день.</p>
     <p>Продуманная система мониторов для повара или всего цеха, автоматическая печать чеков, планирование загрузки кухни
       — все это обеспечит четкую и бесперебойную работу вашему производству.</p>
