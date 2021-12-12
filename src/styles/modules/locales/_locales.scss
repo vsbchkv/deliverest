@@ -10,6 +10,7 @@
   }
 
   &__item {
+    position: relative;
     display: flex;
     flex: 1 1 50%;
     font-weight: 700;
@@ -47,6 +48,50 @@
         margin-left: rem(12);
         transform: translateY(rem(5px));
       }
+    }
+
+    &--active {
+      &::after {
+        transform: rotate(180deg) translateY(vw($mobile, -3px));
+
+        @media screen and (min-width: $desktop) {
+          transform: rotate(180deg) translateY(rem(-6px));
+        }
+      }
+    }
+  }
+}
+
+.locale-dropdown {
+
+  &__list {
+    display: none;
+    position: absolute;
+    top: vw($mobile, 14px);
+    left: 0;
+    width: 70%;
+    text-align: right;
+    background-color: $black;
+
+    @media screen and (min-width: $desktop) {
+      top: 22px;
+      width: 100%;
+    }
+
+    &--expanded {
+      display: block;
+    }
+  }
+
+  &__item {
+    padding: vw($mobile, 6px) vw($mobile, 18px);
+
+    @media screen and (min-width: $desktop) {
+      padding: 6px 22px;
+    }
+
+    &:hover {
+      background-color: $accentColor;
     }
   }
 }
