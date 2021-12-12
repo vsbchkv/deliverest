@@ -2,9 +2,11 @@
   background-color: $purple;
   padding-top: vw($mobile, 37px);
   padding-bottom: vw($mobile, 16px);
+  background-color: #42386b;
 
   @media screen and (min-width: $desktop) {
     padding-top: rem(118);
+    padding-bottom: rem(633);
   }
 
   @media screen and (max-width: $desktop - 1) {
@@ -25,6 +27,10 @@
 
     @media screen and (max-width: $desktop - 1) {
       text-align: center;
+    }
+    @media screen and (min-width: $desktop) {
+      position: relative;
+      z-index: 1;
     }
   }
 
@@ -58,9 +64,9 @@
 
     @media screen and (min-width: $desktop) {
       position: absolute;
-      top: -175px;
-      right: -1461px;
-      width: 1798px;
+      top: rem(-119);
+      right: rem(-1330);
+      width: rem(2558);
     }
     @media screen and (max-width: $desktop - 1) {
       img {
@@ -68,6 +74,18 @@
         object-position: center;
         position: relative;
         left: -14%;
+      }
+    }
+
+    img {
+      display: block;
+      width: 100%;
+
+      @media screen and (max-width: $desktop - 1) {
+        position: relative;
+        width: 282%;
+        left: -86%;
+        top: vw($mobile, -38px);
       }
     }
   }
