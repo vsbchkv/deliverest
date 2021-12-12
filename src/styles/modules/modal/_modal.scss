@@ -1,0 +1,74 @@
+.modal {
+  position: relative;
+  width: vw($mobile, 304px);
+  max-height: 100%;
+  background-color: $white;
+  border-radius: vw($mobile, 6px);
+  filter: drop-shadow(0 vw($mobile, 5px) vw($mobile, 40px) rgba(23, 11, 69, 0.12));
+  overflow-y: auto;
+
+  @media screen and (min-width: $desktop) {
+    width: rem(808);
+    border-radius: rem(12);
+    filter: drop-shadow(0 5px 40px rgba(23, 11, 69, 0.12));
+  }
+
+  &__close {
+    @extend %button-unstyled;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: vw($mobile, 32px);
+    height: vw($mobile, 32px);
+    position: absolute;
+    top: vw($mobile, 8px);
+    right: vw($mobile, 8px);
+    color: #9a9a9a;
+    cursor: pointer;
+
+    @media screen and (min-width: $desktop) {
+      top: rem(24);
+      right: rem(24);
+      width: rem(48);
+      height: rem(48);
+    }
+
+    &:hover {
+      color: $defaultText;
+    }
+
+    img {
+      width: 50%;
+      fill: currentColor;
+
+      @media screen and (min-width: $desktop) {
+        width: 67%;
+      }
+    }
+  }
+
+  &__content {
+    padding: vw($mobile, 18px) vw($mobile, 23px) vw($mobile, 46px);
+
+    @media screen and (min-width: $desktop) {
+      padding: rem(40) rem(46) rem(49);
+    }
+  }
+}
+
+.layout {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+
+  &.show {
+    display: flex;
+  }
+}

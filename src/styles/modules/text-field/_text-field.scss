@@ -1,27 +1,37 @@
 .text-field {
   @extend %input-unstyled;
-  padding: 0 vw($mobile, 16px);
-  height: vw($mobile, 43px); //48px
+  height: vw($mobile, 18px); //48px
+  padding: 0;
   font-size: vw($mobile, 14px);
   color: $defaultText;
   // letter-spacing: .015em;
   // background-color: rgba(9, 19, 33, 0.06);
-  border-radius: $borderRadius;
+  border: 0;
+  border-bottom: 2px solid rgba(23, 11, 69, 0.12);
 
   @media screen and (min-width: $desktop) {
-    padding: 0 rem(16);
-    height: rem(43);
-    font-size: rem(14);
+    height: rem(36);
+    font-size: rem(26);
   }
 
   @at-root textarea#{&} {
-    resize: vertical;
+    min-height: vw($mobile, 21px);
     padding-top: vw($mobile, 11px);
-    min-height: vw($mobile, 105px);
+    resize: vertical;
+    overflow: hidden;
 
     @media screen and (min-width: $desktop) {
+      min-height: rem(36);
       padding-top: rem(11);
-      min-height: rem(105);
+    }
+
+    &--expanded {
+      min-height: vw($mobile, 50px);
+      overflow: initial;
+
+      @media screen and (min-width: $desktop) {
+        min-height: rem(120);
+      }
     }
   }
 
@@ -33,18 +43,83 @@
   &--error {
     // box-shadow: 0 0 0 1px rgba(#F43319, 0.8);
   }
+
   &:focus {
-    background-color: rgba(9, 19, 33, 0.06);
+    outline: 0;
+    border-color: $accentColor;
 
     &::placeholder {
       // color: $grayLight3;
     }
   }
+
   &:disabled {
     // background-color: $grayLightest;
 
     &::placeholder {
       opacity: 0.5;
+    }
+  }
+}
+
+.field {
+  display: flex;
+  margin-bottom: vw($mobile, 20px);
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: rem(47);
+    width: rem(322);
+  }
+
+  &--full-width {
+    width: 100%;
+  }
+
+  .pre-label {
+    margin-right: vw($mobile, 10px);
+
+    @media screen and (min-width: $desktop) {
+      margin-right: rem(22);
+    }
+  }
+}
+
+.floating-label {
+  position: relative;
+  flex-grow: 1;
+
+  &__input {
+    width: 100%;
+  }
+
+  &__input::placeholder {
+    opacity: 0;
+  }
+
+  &__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    //font-size: 0.825em;
+    color: #9a9a9a;
+    transform: translateY(0);
+    transition-duration: 300ms;
+  }
+
+  &:focus-within > &__input,
+  &__input:not(:placeholder-shown) {
+    border-color: $accentColor;
+  }
+
+  &:focus-within > &__label,
+  &__input:not(:placeholder-shown) + &__label {
+    font-size: vw($mobile, 10px);
+    color: $accentColor;
+    transform: translateY(-11px);
+
+    @media screen and (min-width: $desktop) {
+      font-size: rem(16);
+      transform: translateY(-20px);
     }
   }
 }

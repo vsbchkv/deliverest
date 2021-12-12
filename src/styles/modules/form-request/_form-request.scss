@@ -1,0 +1,47 @@
+.form-request {
+  &__title {
+    margin-bottom: vw($mobile, 16px);
+    font-weight: bold;
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: rem(33);
+    }
+  }
+
+  &__text {
+    margin-bottom: vw($mobile, 26px);
+    font-size: vw($mobile, 10px);
+
+    @media screen and (max-width: $desktop - 1px) {
+      line-height: 1.4;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: rem(88);
+      padding-right: rem(22);
+      font-size: rem(20);
+    }
+  }
+
+  &__form {
+    &:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+  }
+
+  &__btn {
+    float: right;
+    margin-top: vw($mobile, -3px);
+
+    @media screen and (max-width: $desktop - 1px) {
+      height: vw($mobile, 25px);
+      padding: 0 vw($mobile, 17px);
+      font-size: vw($mobile, 13px);
+      text-transform: uppercase;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-top: rem(-8);
+    }
+  }
+}
