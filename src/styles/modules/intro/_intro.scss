@@ -1,10 +1,12 @@
 .intro {
+  position: relative;
   padding: vw($mobile, 40px) 0 vw($mobile, 298px);
   color: $white;
   background: $darkGray;
 
   @media screen and (max-width: $desktop - 1px) {
     text-align: center;
+    overflow: hidden;
   }
 
   @media screen and (min-width: $desktop) {
@@ -28,13 +30,42 @@
       margin-bottom: rem(84);
       max-width: 72%;
       font-size: rem(84);
+      position: relative;
+      z-index: 2;
     }
   }
 
   &__btn {
     padding: 0 vw($mobile, 12px);
+
+    @media screen and (max-width: $desktop - 1px) {
+      position: relative;
+      z-index: 2;
+    }
+
     @media screen and (min-width: $desktop) {
       padding: 0 rem(57);
+    }
+  }
+
+  &__pic {
+    position: absolute;
+
+    @media screen and (max-width: $desktop - 1px) {
+      bottom: 0;
+      left: 0;
+      width: 100vw;
+    }
+
+    @media screen and (min-width: $desktop) {
+      bottom: rem(0);
+      left: rem(1003);
+      width: rem(1134);
+    }
+
+    img {
+      display: block;
+      width: 100%;
     }
   }
 }
