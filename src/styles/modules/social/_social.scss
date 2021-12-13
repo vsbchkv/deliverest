@@ -1,15 +1,29 @@
 .social {
   display: flex;
   flex-wrap: wrap;
-  margin-left: vw($mobile, -20px);
-  margin-top: vw($mobile, -20px);
+  margin-left: vw($mobile, -17px);
+  margin-top: vw($mobile, -17px);
+
+  @media screen and (min-width: $desktop) {
+    margin-left: rem(-17);
+    margin-top: rem(-17);
+  }
 
   &__item {
-    margin-left: vw($mobile, 20px);
-    margin-top: vw($mobile, 20px);
+    margin-left: vw($mobile, 17px);
+    margin-top: vw($mobile, 17px);
+    @media screen and (min-width: $desktop) {
+      margin-left: rem(17);
+      margin-top: rem(17);
+    }
   }
   &__icon {
-    width: 32px;
-    height: 32px;
+    width: vw($mobile,32px);
+    height: vw($mobile,32px);
+
+    @media screen and (min-width: $desktop) {
+      width: rem(32);
+      height: rem(32);
+    }
   }
 }
