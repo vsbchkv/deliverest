@@ -13,15 +13,49 @@
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: vw($mobile, 22px);
+
+    @media screen and (min-width: $desktop) {
+      display: block;
+      margin-bottom: rem(22);
+      grid-area: head;
+    }
   }
 
   &__logo,
   &__contacts {
     width: calc(50% - vw($mobile, 12px));
+    @media screen and (min-width: $desktop) {
+      width: auto;
+    }
+  }
+
+  &__contacts {
+    @media screen and (min-width: $desktop) {
+      padding-left: rem(40);
+      padding-top: rem(20);
+    }
+  }
+
+  &__logo {
+    @media screen and (min-width: $desktop) {
+      max-width: rem(205);
+    }
   }
 
   &__nav {
     padding-top: vw($mobile, 24px);
+
+    @media screen and (min-width: $desktop) {
+      padding-top: rem(24);
+      display: grid;
+      grid-template-columns: 1.32fr 1fr 1fr;
+      grid-template-areas:
+        "menu locales head"
+        "menu social head";
+      align-items: start;
+      grid-template-rows: rem(40) 1fr;
+      row-gap: rem(15);
+    }
   }
 
   &__link {
@@ -29,7 +63,12 @@
     display: block;
     line-height: 1.4;
 
-    &, &:hover {
+    @media screen and (min-width: $desktop) {
+      font-size: rem(22);
+    }
+
+    &,
+    &:hover {
       text-decoration: none;
     }
 
@@ -42,11 +81,44 @@
     column-count: 2;
     column-gap: vw($mobile, 5px);
     margin-bottom: vw($mobile, 22px);
+
+    @media screen and (min-width: $desktop) {
+      column-gap: rem(5);
+      margin-bottom: rem(22);
+      grid-area: menu;
+      font-size: rem(22);
+    }
   }
 
   &__menu-item {
     & + & {
-      margin-top: 5px;
+      margin-top: vw($mobile, 5px);
+
+      @media screen and (min-width: $desktop) {
+        margin-top: rem(14);
+      }
+    }
+  }
+
+  &__locales {
+    @media screen and (min-width: $desktop) {
+      display: none;
+    }
+    &--desktop {
+      display: none;
+      @media screen and (min-width: $desktop) {
+        display: block;
+        background-color: inherit;
+        grid-area: locales;
+        font-size: rem(22);
+        padding: 0;
+      }
+    }
+  }
+
+  &__social {
+    @media screen and (min-width: $desktop) {
+      grid-area: social;
     }
   }
 }

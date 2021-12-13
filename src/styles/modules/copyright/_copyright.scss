@@ -4,4 +4,10 @@
   color: $white;
   font-size: vw($mobile, 10px);
   margin-top: vw($mobile, 20px);
+
+  @media screen and (min-width: $desktop) {
+    padding: rem(10) 0;
+    font-size: rem(16);
+    margin-top: rem(10);
+  }
 }
