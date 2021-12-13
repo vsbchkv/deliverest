@@ -48,7 +48,7 @@
     @media screen and (min-width: $desktop) {
       padding-top: rem(24);
       display: grid;
-      grid-template-columns: 1.32fr 1fr 1fr;
+      grid-template-columns: 1.33fr 1fr 1.02fr;
       grid-template-areas:
         "menu locales head"
         "menu social head";
@@ -79,7 +79,7 @@
 
   &__menu {
     column-count: 2;
-    column-gap: vw($mobile, 5px);
+    column-gap: vw($mobile, 23px);
     margin-bottom: vw($mobile, 22px);
 
     @media screen and (min-width: $desktop) {
@@ -87,6 +87,7 @@
       margin-bottom: rem(22);
       grid-area: menu;
       font-size: rem(22);
+      padding-right: 12%;
     }
   }
 
@@ -103,6 +104,9 @@
   &__locales {
     @media screen and (min-width: $desktop) {
       display: none;
+      .content-wrapper {
+        padding: 0;
+      }
     }
     &--desktop {
       display: none;
