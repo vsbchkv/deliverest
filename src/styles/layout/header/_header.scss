@@ -1,11 +1,16 @@
 .header {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
+  $localesHeight: vw($mobile, 26px);
+  $headerHeight: vw($mobile, 64);
+  position: sticky;
+  top: $localesHeight * -1;
   z-index: 5;
   height: vw($mobile, 65px);
   color: $white;
+
+  & + .main {
+    padding-top: $headerHeight;
+    padding-top: 0;
+  }
 
   @media screen and (min-width: $desktop) {
     height: rem(125);
