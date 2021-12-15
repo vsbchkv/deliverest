@@ -13,7 +13,10 @@
   }
 
   @media screen and (min-width: $desktop) {
+    $localesHeight: rem(50);
+    $headerHeight: rem(125);
     height: rem(125);
+    top: $localesHeight * -1;
   }
 
   &__locales {
