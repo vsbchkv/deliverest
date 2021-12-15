@@ -103,10 +103,10 @@ body {
 }
 
 .main {
-  padding-top: vw($mobile, 60px);
+  // padding-top: vw($mobile, 60px);
 
   @media screen and (min-width: $desktop) {
-    padding-top: rem(75);
+    // padding-top: rem(75);
     overflow-x: hidden;
   }
 }
@@ -132,4 +132,8 @@ body {
     left: 0;
     right: 0;
   }
+}
+
+.page-layout {
+  position: relative;
 }
