@@ -39,5 +39,8 @@
   "browserslist": [
     "last 7 versions",
     "not ie <= 11"
-  ]
+  ],
+  "dependencies": {
+    "@splidejs/splide": "^3.6.9"
+  }
 }
