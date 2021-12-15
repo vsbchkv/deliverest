@@ -1,15 +1,176 @@
 .marketing {
-  padding-top: vw($mobile, 10px);
+  padding: vw($mobile, 43px) 0 vw($mobile, 48px);
+  text-align: center;
+  color: $white;
+  background-color: #20183e;
 
   @media screen and (min-width: $desktop) {
-    padding-top: rem(10);
+    padding: rem(81) 0 rem(20);
   }
 
   &__title {
-    margin-bottom: vw($mobile, 10px);
+    margin-bottom: vw($mobile, 11px);
+    color: inherit;
 
     @media screen and (min-width: $desktop) {
-      margin-bottom: rem(10);
+      margin-bottom: rem(36);
+    }
+  }
+
+  &__text {
+    margin-bottom: vw($mobile, 16px);
+
+    @media screen and (min-width: $desktop) {
+      margin: 0 15% rem(41);
+    }
+  }
+
+  &__nav {
+    position: relative;
+    height: vw($mobile, 28px);
+    margin: 0 0 vw($mobile, 26px);
+
+    @media screen and (min-width: $desktop) {
+      max-width: 1440px;
+      height: 50px;
+      margin: 0 0 36px;
+    }
+  }
+
+  &__list {
+
+    @media screen and (max-width: $desktop - 1px) {
+      overflow: hidden;
+      border-radius: vw($mobile, 7px);
+    }
+
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  .slick-arrow {
+    @extend %button-unstyled;
+    position: absolute;
+    top: vw($mobile, 2px);
+    width: vw($mobile, 40px);
+    height: vw($mobile, 28px);
+    font-size: 0;
+
+    @media screen and (min-width: $desktop) {
+      top: 0;
+      width: 80px;
+      height: 56px;
+    }
+
+    &:not(:disabled) {
+      cursor: pointer;
+    }
+
+    &:before {
+      font-size: vw($mobile, 28px);
+
+      @media screen and (min-width: $desktop) {
+        font-size: 40px;
+      }
+    }
+  }
+
+  .slick-prev {
+    left: 0;
+    background: url('../media/icons/left.svg') no-repeat 0 0;
+    background-size: 100% auto;
+  }
+
+  .slick-next {
+    right: 0;
+    background: url('../media/icons/right.svg') no-repeat 0 0;
+    background-size: 100% auto;
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+
+    button {
+      @extend %button-unstyled;
+      width: vw($mobile, 12px);
+      height: vw($mobile, 12px);
+      margin: vw($mobile, 2px);
+      font-size: 0;
+      background-color: transparent;
+      border: vw($mobile, 4px) solid #eaeaea;
+      border-radius: 50%;
+
+      @media screen and (min-width: $desktop) {
+        width: 24px;
+        height: 24px;
+        margin: 4px;
+        border-width: 8px;
+      }
+    }
+
+    .slick-active button {
+      background-color: $accentColor;
+      border-color: $accentColor;
+    }
+  }
+}
+
+.marketing-slide {
+  position: relative;
+  width: vw($mobile, 296px);
+  padding: vw($mobile, 19px) vw($mobile, 10px) vw($mobile, 177px);
+  line-height: 1.28;
+  color: $defaultText;
+  background-color: $white;
+
+  @media screen and (min-width: $desktop) {
+    width: calc(33.3% - 80px);
+    max-width: 514px;
+    margin: 0 40px 80px;
+    padding: 44px 10px /*403px*/21.7%;
+    border-radius: 12px;
+  }
+
+  &__title {
+    margin-bottom: vw($mobile, 17px);
+    font-weight: bold;
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 21px;
+    }
+  }
+
+  &__text {
+    position: relative;
+    z-index: 2;
+    margin-bottom: vw($mobile, 19px);
+
+    @media screen and (min-width: $desktop) {
+      max-width: 450px;
+      margin: 0 auto rem(10);
+      font-size: 20px;
+    }
+  }
+
+  &__pic {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    @media screen and (min-width: $desktop) {
+      //
+    }
+
+    img {
+      display: block;
+      width: 100%;
     }
   }
 }
