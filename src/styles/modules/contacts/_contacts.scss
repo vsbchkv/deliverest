@@ -1,0 +1,85 @@
+.contacts {
+  background-color: $lightGray2;
+  padding-top: vw($mobile, 40px);
+  padding-bottom: vw($mobile, 78px);
+
+  @media screen and (min-width: $desktop) {
+    padding-top: rem(60);
+    padding-bottom: rem(117);
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: vw($mobile, 12px);
+
+    @media screen and (min-width: $desktop) {
+      text-align: left;
+      margin-bottom: rem(25);
+    }
+  }
+
+  &__text {
+    text-align: center;
+    margin-bottom: vw($mobile, 26px);
+    @media screen and (max-width: $desktop - 1) {
+      padding: 0 5%;
+    }
+    @media screen and (min-width: $desktop) {
+      text-align: left;
+      margin-bottom: rem(40);
+      letter-spacing: 0.005em;
+    }
+  }
+
+  &__messengers {
+    @media screen and (min-width: $desktop) {
+      display: flex;
+    }
+  }
+
+  &__item {
+    & + & {
+      @media screen and (max-width: $desktop - 1) {
+        margin-top: vw($mobile, 26px);
+      }
+      @media screen and (min-width: $desktop) {
+        margin-left: rem(35);
+      }
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    font-size: vw($mobile, 20px);
+
+    @media screen and (min-width: $desktop) {
+      font-size: rem(26);
+    }
+  }
+
+  &__link-icon {
+    width: vw($mobile, 32px);
+    height: vw($mobile, 32px);
+    margin-right: vw($mobile, 17px);
+
+    @media screen and (min-width: $desktop) {
+      width: rem(32);
+      height: rem(32);
+      margin-right: rem(17);
+    }
+  }
+
+  &__btn {
+    margin-top: vw($mobile, 45px);
+
+    @media screen and (max-width: $desktop - 1) {
+      display: block;
+      width: 100%;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-top: rem(45);
+    }
+  }
+}

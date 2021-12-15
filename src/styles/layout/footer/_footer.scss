@@ -4,7 +4,7 @@
     background-color: $black;
     font-size: vw($mobile, 12px);
     @media screen and (min-width: $desktop) {
-      font-size: rem(18);
+      font-size: rem(28);
     }
   }
 
@@ -48,7 +48,7 @@
     @media screen and (min-width: $desktop) {
       padding-top: rem(24);
       display: grid;
-      grid-template-columns: 1.33fr 1fr 1.02fr;
+      grid-template-columns: 1.35fr 1fr 1.02fr;
       grid-template-areas:
         "menu locales head"
         "menu social head";
@@ -96,7 +96,7 @@
       margin-top: vw($mobile, 5px);
 
       @media screen and (min-width: $desktop) {
-        margin-top: rem(14);
+        margin-top: rem(10);
       }
     }
   }
