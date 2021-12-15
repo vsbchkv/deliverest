@@ -73,7 +73,7 @@
   }
 
   &__pic {
-    width: vw($mobile, 320px);
+    max-width: vw($mobile, 320px);
     margin: vw($mobile, 7px) vw($mobile, -12px) vw($mobile, 27px);
 
     @media screen and (min-width: $desktop) {
