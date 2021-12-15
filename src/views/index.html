@@ -13,11 +13,12 @@
       <div class="content-wrapper intro__wrapper">
         <div class="intro__pic">
           <picture>
-            <source srcset="media/images/intro-mob@1x.png 1x, media/images/intro-mob@2x.png 2x" media="(max-width: 1024px) ">
-            <source srcset="media/images/intro-mob@1x.webp 1x, media/images/intro-mob@2x.webp 2x" media="(max-width: 1024px)">
+            <source srcset="media/images/intro-mob@1x.png 1x, media/images/intro-mob@2x.png 2x"
+              media="(max-width: 1024px) ">
+            <source srcset="media/images/intro-mob@1x.webp 1x, media/images/intro-mob@2x.webp 2x"
+              media="(max-width: 1024px)">
             <source type="image/webp" srcset="media/images/intro@1x.webp 1x, media/images/intro@2x.webp 2x">
-            <img src="media/images/intro@1x.png"
-                 srcset="media/images/intro@1x.png 1x" alt="">
+            <img src="media/images/intro@1x.png" srcset="media/images/intro@1x.png 1x" alt="">
           </picture>
         </div>
         <h1 class="intro__title">
@@ -216,7 +217,7 @@
           <div class="kitchen__pic">
             <picture>
               <!--TODO: screen breakpoints-->
-              <!--<source type="image/webp" srcset="media/images/map-phone-mob@1x.webp 1x" media="(max-width: 560px)">-->
+              <!-- <source type="image/webp" srcset="media/images/map-phone-mob@1x.webp 1x" media="(max-width: 560px)"> -->
               <source srcset="media/images/kitchen-mob@1x.png 1x" media="(max-width: 560px)">
               <img src="media/images/kitchen.png" srcset="media/images/kitchen.png 1x" alt="Изображения">
             </picture>
@@ -251,17 +252,22 @@
       * Обычно стоимость внедрения составляет 160 долларов
     </section>
     <section class="contacts">
-      <h2>Контакты</h2>
-      <div class="contacts__text">
-        Можете связаться с нами в любом удобном для вас мессенджере или написать на почту <a
-          href="mailto:contact@deliverest.io">contact@deliverest.io</a>
+      <div class="content-wrapper">
+        <h2 class="section-title contacts__title">Контакты</h2>
+        <div class="contacts__text">
+          Можете связаться с нами в любом удобном для вас мессенджере или написать на почту <a
+            href="mailto:contact@deliverest.io">contact@deliverest.io</a>
+        </div>
+        <ul class="contacts__messengers">
+          <li class="contacts__item"><a class="contacts__link" href="#"><img src="media/icons/social/whatsapp.svg"
+                alt="instagram" class="contacts__link-icon">WhatsApp</a></li>
+          <li class="contacts__item"><a class="contacts__link" href="#"><img src="media/icons/social/viber.svg"
+                alt="viber" class="contacts__link-icon">Viber</a></li>
+          <li class="contacts__item"><a class="contacts__link" href="#"><img src="media/icons/social/telegram.svg"
+                alt="telegram" class="contacts__link-icon">Telegram</a></li>
+        </ul>
+        <button class="button button--primary contacts__btn js-open-modal" type="button">Запрос демоверсии</button>
       </div>
-      <ul class="contacts__messengers">
-        <li><a href="#">WhatsApp</a></li>
-        <li><a href="#">Viber</a></li>
-        <li><a href="#">Telegram</a></li>
-      </ul>
-      <button class="button button--primary contacts__btn js-open-modal" type="button">Запрос демоверсии</button>
     </section>
   </main>
   @@include('./includes/_footer.html')
@@ -281,13 +287,15 @@
         <form class="form-request__form">
           <div class="field">
             <label class="floating-label" for="name">
-              <input class="text-field floating-label__input" name="name" id="name" placeholder="Как вас зовут*" value="Константин">
+              <input class="text-field floating-label__input" name="name" id="name" placeholder="Как вас зовут*"
+                value="Константин">
               <span class="floating-label__label">Как вас зовут*</span>
             </label>
           </div>
           <div class="field">
             <label class="floating-label" for="country">
-              <input class="text-field floating-label__input" name="country" id="country" placeholder="Страна*" value="Россия">
+              <input class="text-field floating-label__input" name="country" id="country" placeholder="Страна*"
+                value="Россия">
               <span class="floating-label__label">Страна*</span>
             </label>
           </div>
@@ -306,7 +314,8 @@
           </div>
           <div class="field field--full-width">
             <label class="floating-label" for="comments">
-              <textarea class="text-field floating-label__input" name="comments" id="comments" placeholder="Комментарий"></textarea>
+              <textarea class="text-field floating-label__input" name="comments" id="comments"
+                placeholder="Комментарий"></textarea>
               <span class="floating-label__label">Комментарий</span>
             </label>
           </div>
