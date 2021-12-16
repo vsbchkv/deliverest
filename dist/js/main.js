@@ -58,10 +58,33 @@ $(document).ready(function () {
     slidesToShow: 3,
     focusOnSelect: true,
     //arrows: true,
-    appendArrows: $('.custom-slider__nav'),
+    appendArrows: $('.custom-nav1'),
     dots: true,
     dotsClass: 'slick-dots',
-    appendDots: $('.custom-slider__nav'),
+    appendDots: $('.custom-nav1'),
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          //dots: false
+        }
+      }
+    ]
+  });
+
+  $('.js-slider2').slick({
+    centerMode: true,
+    variableWidth: true,
+    //customPaging: '60px',
+    //centerPadding: '60px',
+    slidesToShow: 3,
+    focusOnSelect: true,
+    //arrows: true,
+    appendArrows: $('.custom-nav2'),
+    dots: true,
+    dotsClass: 'slick-dots',
+    appendDots: $('.custom-nav2'),
     responsive: [
       {
         breakpoint: 1024,
