@@ -1,18 +1,20 @@
 .couriers {
   padding-top: vw($mobile, 40px);
+
   @media screen and (max-width: $desktop - 1) {
     overflow: hidden;
   }
 
   @media screen and (min-width: $desktop) {
-    padding-top: rem(175);
-    padding-bottom: rem(186);
+    padding-top: rem(140);
+    padding-bottom: rem(148);
   }
 
   &__content {
     position: relative;
+
     @media screen and (min-width: $desktop) {
-      margin: 0 66.5% 0 0;
+      margin: 0 49% 0 0;
     }
   }
 
@@ -23,9 +25,10 @@
 
     @media screen and (max-width: $desktop - 1) {
       max-width: 100vw;
-      height: 436px;
+      height: vw($mobile, 436px);
       margin: 0 vw($mobile, -12px);
     }
+
     img {
       display: block;
       width: 100%;
@@ -40,36 +43,41 @@
 
     @media screen and (min-width: $desktop) {
       position: absolute;
-      top: -175px;
-      right: -1461px;
-      width: 1798px;
+      top: -140px;
+      right: -826px;
+      width: 1433px;
     }
   }
 
   &__title {
     margin-bottom: vw($mobile, 22px);
+
     @media screen and (max-width: $desktop - 1) {
       text-align: center;
     }
 
     @media screen and (min-width: $desktop) {
-      margin-bottom: rem(40);
+      margin-bottom: rem(34);
     }
   }
 
   &__desc {
     margin-bottom: vw($mobile, 40px);
+
     @media screen and (max-width: $desktop - 1) {
       text-align: center;
     }
 
     @media screen and (min-width: $desktop) {
-      margin-bottom: rem(74);
+      margin-bottom: rem(55);
     }
   }
 
   &__list {
     @extend %list-unstyled;
+    line-height: 1;
+    font-weight: 300;
+    color: $darkGray;
   }
 
   &__list-item {
@@ -84,20 +92,18 @@
       margin-top: vw($mobile, 34px);
 
       @media screen and (min-width: $desktop) {
-        margin-top: 64px;
+        margin-top: 52px;
       }
     }
   }
 
   &__list-pic {
     width: vw($mobile, 24px);
-    height: vw($mobile, 24px);
     margin-right: vw($mobile, 15px);
 
     @media screen and (min-width: $desktop) {
-      width: rem(48);
-      height: rem(48);
-      margin-right: rem(23);
+      width: rem(39);
+      margin-right: rem(20);
     }
   }
 }

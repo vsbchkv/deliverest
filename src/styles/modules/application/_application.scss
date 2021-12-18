@@ -10,7 +10,7 @@
   }
 
   @media screen and (min-width: $desktop) {
-    padding: rem(176) 0 rem(169);
+    padding: rem(140) 0 rem(138);
     overflow: hidden;
     //line-height: 1.39;
     //font-size: rem(26);
@@ -48,7 +48,7 @@
 
     @media screen and (min-width: $desktop) {
       position: relative;
-      margin: 0 6% 0 41%;
+      margin: 0 0 0 33.1%;
     }
   }
 
@@ -57,7 +57,7 @@
     color: inherit;
 
     @media screen and (min-width: $desktop) {
-      margin-bottom: rem(29);
+      margin-bottom: rem(23);
     }
   }
 
@@ -65,30 +65,17 @@
     margin-bottom: vw($mobile, 39px);
 
     @media screen and (min-width: $desktop) {
-      margin-bottom: 55px;
+      margin-bottom: 40px;
+      padding-right: 5%;
     }
   }
 
   &__list {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: left;
-    line-height: 1.15;
-    font-weight: 300;
+    @extend %list-iconed;
   }
 
   &__item {
-    display: flex;
-    align-items: flex-start;
-    width: 50%;
-    min-height: vw($mobile, 48px);
-    margin-bottom: vw($mobile, 10px);
-
-    @media screen and (min-width: $desktop) {
-      align-items: center;
-      min-height: 50px;
-      margin-bottom: 58px;
-    }
+    @extend %list-iconed__item;
   }
 
   &__icon {
@@ -97,9 +84,9 @@
     margin-right: vw($mobile, 15px);
 
     @media screen and (min-width: $desktop) {
-      width: 50px;
+      width: 39px;
       margin-top: 0;
-      margin-right: 15px;
+      margin-right: 20px;
     }
   }
 
@@ -109,9 +96,9 @@
 
     @media screen and (min-width: $desktop) {
       position: absolute;
-      top: -69px;
-      left: -662px;
-      width: 526px;
+      top: -54px;
+      left: -534px;
+      width: 419px;
       margin: 0;
     }
 

@@ -5,7 +5,7 @@
   background-color: #20183e;
 
   @media screen and (min-width: $desktop) {
-    padding: rem(81) 0 rem(20);
+    padding: rem(64) 0 rem(20);
   }
 
   &__title {
@@ -13,7 +13,7 @@
     color: inherit;
 
     @media screen and (min-width: $desktop) {
-      margin-bottom: rem(36);
+      margin-bottom: rem(30);
     }
   }
 
@@ -21,7 +21,7 @@
     margin-bottom: vw($mobile, 16px);
 
     @media screen and (min-width: $desktop) {
-      margin: 0 15% rem(41);
+      margin: 0 18% rem(41);
     }
   }
 

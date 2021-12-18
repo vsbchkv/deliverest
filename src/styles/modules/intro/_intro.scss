@@ -10,7 +10,7 @@
   }
 
   @media screen and (min-width: $desktop) {
-    padding: rem(220) 0 rem(168);
+    padding: rem(124) 0 rem(121);
   }
 
   @media screen and (min-width: $desktopMax) {
@@ -27,11 +27,11 @@
     }
 
     @media screen and (min-width: $desktop) {
-      margin-bottom: rem(84);
-      max-width: 72%;
-      font-size: rem(84);
       position: relative;
       z-index: 2;
+      max-width: 72%;
+      margin-bottom: rem(46);
+      font-size: rem(58);
     }
   }
 
@@ -44,7 +44,7 @@
     }
 
     @media screen and (min-width: $desktop) {
-      padding: 0 rem(57);
+      padding: 0 rem(50);
     }
   }
 
@@ -59,8 +59,8 @@
 
     @media screen and (min-width: $desktop) {
       bottom: rem(0);
-      left: rem(1003);
-      width: rem(1134);
+      left: rem(575);
+      width: rem(904);
     }
 
     img {

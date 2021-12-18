@@ -25,12 +25,12 @@ p + p {
   margin-top: vw($mobile, 13px);
 
   @media screen and (min-width: $desktop) {
-    margin-top: rem(16);
+    margin-top: rem(12);
   }
 
-  @media screen and (min-width: $desktopMax) {
+  /*@media screen and (min-width: $desktopMax) {
     margin-top: rem(40);
-  }
+  }*/
 }
 
 ul:not([class]) {

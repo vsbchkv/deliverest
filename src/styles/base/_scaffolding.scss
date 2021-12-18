@@ -64,7 +64,7 @@ body {
   color: $defaultText;
 
   @media screen and (min-width: $desktop) {
-    font-size: rem(26);
+    font-size: rem(21);
     line-height: 1.39;
   }
 
@@ -113,14 +113,6 @@ body {
 
 .section-title {
   @extend %section-title;
-}
-
-.section-desc {
-  font-size: vw($mobile, 14px);
-
-  @media screen and (min-width: $desktop) {
-    font-size: rem(26);
-  }
 }
 
 .area-clickable {

@@ -15,9 +15,9 @@
   transition: background-color 180ms ease-out, color 180ms ease-out; // todo mixin
 
   @media screen and (min-width: $desktop) {
-    height: rem(74);
-    padding: 0 rem(60);
-    font-size: rem(36);
+    height: rem(59);
+    padding: 0 rem(50);
+    font-size: rem(29);
     letter-spacing: 0.0045em;
   }
 
@@ -70,9 +70,9 @@
     letter-spacing: normal;
 
     @media screen and (min-width: $desktop) {
-      height: rem(51);
+      height: rem(41);
       padding: 0 rem(45);
-      font-size: rem(26);
+      font-size: rem(21);
     }
   }
 }

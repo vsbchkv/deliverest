@@ -2,7 +2,7 @@
   padding: vw($mobile, 40px) 0  vw($mobile, 36px);
 
   @media screen and (min-width: $desktop) {
-    padding: rem(110) 0 rem(29);
+    padding: rem(89) 0 rem(5);
   }
 
   &__wrapper {
@@ -18,7 +18,7 @@
 
     @media screen and (min-width: $desktop) {
       max-width: 1000px;
-      margin: 0 auto rem(91);
+      margin: 0 auto rem(41);
     }
   }
 

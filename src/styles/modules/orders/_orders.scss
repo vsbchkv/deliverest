@@ -7,7 +7,7 @@
 
   @media screen and (min-width: $desktop) {
     position: relative;
-    padding: rem(209) 0 rem(60);
+    padding: rem(167) 0 rem(129);
     text-align: left;
     //font-size: rem(26);
     /*background: #20183e url('../media/images/grad.png') no-repeat 0 0;*/
@@ -17,7 +17,7 @@
 
     @media screen and (min-width: $desktop) {
       position: relative;
-      margin: 0 0 0 53.5%;
+      margin: 0 0 0 37%;
     }
   }
 
@@ -26,7 +26,7 @@
     color: inherit;
 
     @media screen and (min-width: $desktop) {
-      margin-bottom: rem(34);
+      margin-bottom: rem(30);
     }
   }
 
@@ -39,24 +39,14 @@
   }
 
   &__list {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: left;
-    line-height: 1.15;
-    font-weight: 300;
+    @extend %list-iconed;
   }
 
   &__item {
-    display: flex;
-    align-items: flex-start;
-    width: 50%;
-    min-height: vw($mobile, 48px);
-    margin-bottom: vw($mobile, 10px);
+    @extend %list-iconed__item;
 
     @media screen and (min-width: $desktop) {
-      align-items: center;
-      min-height: 50px;
-      margin-bottom: 64px;
+      width: 41.5%;
     }
   }
 
@@ -66,9 +56,9 @@
     margin-right: vw($mobile, 15px);
 
     @media screen and (min-width: $desktop) {
-      width: 50px;
+      width: 39px;
       margin-top: 0;
-      margin-right: 15px;
+      margin-right: 20px;
     }
   }
 
@@ -78,9 +68,9 @@
 
     @media screen and (min-width: $desktop) {
       position: absolute;
-      top: -176px;
-      left: -1206px;
-      width: 1020px;
+      top: -102px;
+      left: -994px;
+      width: 886px;
       margin: 0;
     }
 

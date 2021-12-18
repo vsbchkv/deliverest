@@ -4,7 +4,7 @@
 
   @media screen and (min-width: $desktop) {
     position: relative;
-    padding: rem(153) 0 rem(268);
+    padding: rem(120) 0 rem(134);
     text-align: left;
   }
 
@@ -20,7 +20,14 @@
     margin-bottom: vw($mobile, 20px);
 
     @media screen and (min-width: $desktop) {
-      margin-bottom: rem(39);
+      margin-bottom: rem(33);
+    }
+  }
+
+  p {
+
+    @media screen and (min-width: $desktop) {
+      margin-top: rem(12);
     }
   }
 
@@ -30,9 +37,9 @@
 
     @media screen and (min-width: $desktop) {
       position: absolute;
-      top: -217px;
-      right: -1176px;
-      width: 1251px;
+      top: -171px;
+      right: -959px;
+      width: 1001px;
       margin: 0;
     }
 
