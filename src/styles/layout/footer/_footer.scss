@@ -4,7 +4,7 @@
     background-color: $black;
     font-size: vw($mobile, 12px);
     @media screen and (min-width: $desktop) {
-      font-size: rem(28);
+      font-size: rem(18);
     }
   }
 
@@ -46,7 +46,7 @@
     padding-top: vw($mobile, 24px);
 
     @media screen and (min-width: $desktop) {
-      padding-top: rem(24);
+      padding-top: rem(18);
       display: grid;
       grid-template-columns: 1.35fr 1fr 1.02fr;
       grid-template-areas:
@@ -64,7 +64,7 @@
     line-height: 1.4;
 
     @media screen and (min-width: $desktop) {
-      font-size: rem(22);
+      font-size: rem(18);
     }
 
     &,
@@ -114,7 +114,7 @@
         display: block;
         background-color: inherit;
         grid-area: locales;
-        font-size: rem(22);
+        font-size: rem(18);
         padding: 0;
       }
     }

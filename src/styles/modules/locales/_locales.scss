@@ -1,7 +1,7 @@
 .locales {
   padding: vw($mobile, 7px) 0;
   @media screen and (min-width: $desktop) {
-    padding: rem(16) 0;
+    padding: rem(24) 0 rem(12);
   }
 
   &__wrapper {
@@ -35,7 +35,7 @@
       $arrowIconSize: 5px;
 
       & + & {
-        margin-left: rem(45);
+        margin-left: rem(34);
       }
 
       &::after {
@@ -71,11 +71,14 @@
     left: 0;
     width: 70%;
     text-align: right;
-    background-color: $black;
+    background-color: $white;
+    border-radius: 3px;
+    color: $accentColor;
 
     @media screen and (min-width: $desktop) {
-      top: 22px;
+      top: rem(22);
       width: 100%;
+      transform: translate(rem(22), rem(-4));
     }
 
     &--expanded {
@@ -85,13 +88,14 @@
 
   &__item {
     padding: vw($mobile, 6px) vw($mobile, 18px);
+    text-align: center;
 
     @media screen and (min-width: $desktop) {
       padding: 6px 22px;
     }
 
-    &:hover {
-      background-color: $accentColor;
-    }
+    // &:hover {
+    //   background-color: $accentColor;
+    // }
   }
 }

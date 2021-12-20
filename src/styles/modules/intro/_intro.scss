@@ -10,7 +10,7 @@
   }
 
   @media screen and (min-width: $desktop) {
-    padding: rem(124) 0 rem(121);
+    padding: rem(111) 0 rem(121);
   }
 
   @media screen and (min-width: $desktopMax) {
@@ -59,7 +59,8 @@
 
     @media screen and (min-width: $desktop) {
       bottom: rem(0);
-      left: rem(575);
+      left: rem(834);
+      top: rem(10);
       width: rem(904);
     }
 

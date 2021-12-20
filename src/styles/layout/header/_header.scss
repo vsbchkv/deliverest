@@ -14,8 +14,8 @@
 
   @media screen and (min-width: $desktop) {
     $localesHeight: rem(50);
-    $headerHeight: rem(125);
-    height: rem(125);
+    $headerHeight: rem(105);
+    height: $headerHeight;
     top: $localesHeight * -1;
   }
 
@@ -23,7 +23,7 @@
     background-color: $black;
     font-size: vw($mobile, 12px);
     @media screen and (min-width: $desktop) {
-      font-size: rem(18);
+      font-size: rem(14);
     }
   }
 
@@ -31,11 +31,8 @@
     display: none;
     @media screen and (min-width: $desktop) {
       display: inline-flex;
-      background-color: $green;
-      font-size: rem(26);
-      padding: rem(11) rem(40);
-      font-weight: 700;
-      height: rem(51);
+      padding: 0 rem(14);
+      margin-left: auto;
     }
   }
 
@@ -48,7 +45,7 @@
   width: vw($mobile, 103px);
 
   @media screen and (min-width: $desktop) {
-    width: 205px;
+    width: rem(164);
   }
 }
 
@@ -124,12 +121,11 @@
   }
 }
 
-
 .header-nav {
   padding: vw($mobile, 10px) 0;
   background-color: $accentColor;
   box-shadow: 0 0 32px rgba(0, 0, 0, 0.56);
-  $headerNavVerticalPadding: rem(13);
+  $headerNavVerticalPadding: rem(12);
 
   @media screen and (min-width: $desktop) {
     padding: $headerNavVerticalPadding 0;
@@ -137,7 +133,6 @@
 
   &__navigation {
     display: flex;
-    justify-content: space-between;
   }
 
   &__list {
@@ -145,7 +140,7 @@
 
     @media screen and (min-width: $desktop) {
       display: flex;
-      margin-left: rem(140);
+      margin-left: 7%;
     }
   }
 
@@ -168,13 +163,13 @@
       }
     }
     & + & {
-      margin-left: 48px;
+      margin-left: rem(30);
     }
   }
 
   &__link {
     color: $white;
-    font-size: rem(26);
+    font-size: rem(21);
     font-weight: 700;
     display: block;
 

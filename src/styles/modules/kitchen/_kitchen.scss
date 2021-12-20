@@ -1,7 +1,7 @@
 .kitchen {
   background-color: $purple;
-  padding-top: vw($mobile, 37px);
-  padding-bottom: vw($mobile, 16px);
+  padding-top: vw($mobile, 40px);
+  padding-bottom: vw($mobile, 14px);
   background-color: #42386b;
 
   @media screen and (min-width: $desktop) {
@@ -35,7 +35,7 @@
   }
 
   &__title {
-    margin-bottom: vw($mobile, 24px);
+    margin-bottom: vw($mobile, 20px);
 
     @media screen and (min-width: $desktop) {
       margin-bottom: rem(36);
