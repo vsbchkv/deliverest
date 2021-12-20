@@ -5,7 +5,7 @@
   background-color: #20183e;
 
   @media screen and (min-width: $desktop) {
-    padding: rem(64) 0 rem(20);
+    padding: rem(64) 0 rem(40);
   }
 
   &__title {
@@ -21,7 +21,7 @@
     margin-bottom: vw($mobile, 16px);
 
     @media screen and (min-width: $desktop) {
-      margin: 0 18% rem(41);
+      margin: 0 18% rem(16);
     }
   }
 
@@ -58,36 +58,29 @@
     width: vw($mobile, 40px);
     height: vw($mobile, 28px);
     font-size: 0;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% auto;
 
     @media screen and (min-width: $desktop) {
       top: 0;
-      width: 80px;
-      height: 56px;
+      width: 64px;
+      height: 45px;
     }
 
     &:not(:disabled) {
       cursor: pointer;
     }
-
-    &:before {
-      font-size: vw($mobile, 28px);
-
-      @media screen and (min-width: $desktop) {
-        font-size: 40px;
-      }
-    }
   }
 
   .slick-prev {
     left: 0;
-    background: url('../media/icons/left.svg') no-repeat 0 0;
-    background-size: 100% auto;
+    background-image: url('../media/icons/left.svg');
   }
 
   .slick-next {
     right: 0;
-    background: url('../media/icons/right.svg') no-repeat 0 0;
-    background-size: 100% auto;
+    background-image: url('../media/icons/right.svg');
   }
 
   .slick-dots {
@@ -107,16 +100,18 @@
       border-radius: 50%;
 
       @media screen and (min-width: $desktop) {
-        width: 24px;
-        height: 24px;
-        margin: 4px;
-        border-width: 8px;
+        width: 19px;
+        height: 19px;
+        margin: 3px;
+        border-width: 6px;
       }
     }
 
-    .slick-active button {
-      background-color: $accentColor;
-      border-color: $accentColor;
+    .slick-active {
+      button {
+        background-color: $accentColor;
+        border-color: $accentColor;
+      }
     }
   }
 }
@@ -130,9 +125,9 @@
   background-color: $white;
 
   @media screen and (min-width: $desktop) {
-    width: calc(33.3% - 80px);
-    max-width: 514px;
-    margin: 0 40px 80px;
+    width: calc(33.3% - 40px);
+    max-width: 308px;
+    margin: 0 0 60px;
     padding: 44px 10px /*403px*/21.7%;
     border-radius: 12px;
   }

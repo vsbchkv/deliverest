@@ -10,8 +10,8 @@
   border-bottom: 2px solid rgba(23, 11, 69, 0.12);
 
   @media screen and (min-width: $desktop) {
-    height: rem(36);
-    font-size: rem(26);
+    height: rem(28);
+    font-size: rem(21);
   }
 
   @at-root textarea#{&} {
@@ -21,7 +21,7 @@
     overflow: hidden;
 
     @media screen and (min-width: $desktop) {
-      min-height: rem(36);
+      min-height: rem(28);
       padding-top: rem(11);
     }
 
@@ -30,7 +30,7 @@
       overflow: initial;
 
       @media screen and (min-width: $desktop) {
-        min-height: rem(120);
+        min-height: rem(90);
       }
     }
   }
@@ -67,19 +67,19 @@
   margin-bottom: vw($mobile, 20px);
 
   @media screen and (min-width: $desktop) {
-    margin-bottom: rem(47);
-    width: rem(322);
+    margin-bottom: rem(38);
+    width: rem(259);
   }
 
   &--full-width {
-    width: 100%;
+    width: 100% !important;
   }
 
   .pre-label {
     margin-right: vw($mobile, 10px);
 
     @media screen and (min-width: $desktop) {
-      margin-right: rem(22);
+      margin-right: rem(17);
     }
   }
 }
@@ -118,8 +118,8 @@
     transform: translateY(-11px);
 
     @media screen and (min-width: $desktop) {
-      font-size: rem(16);
-      transform: translateY(-20px);
+      font-size: rem(13);
+      transform: translateY(-17px);
     }
   }
 }

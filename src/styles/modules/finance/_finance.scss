@@ -1,3 +1,28 @@
+.finance {
+  padding: vw($mobile, 46px) 0 vw($mobile, 46px);
+
+  @media screen and (min-width: $desktop) {
+    padding: rem(81) 0 rem(20);
+  }
+
+  &__title {
+    margin-bottom: vw($mobile, 11px);
+    text-align: center;
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: rem(52);
+    }
+  }
+
+  &__custom-slider {
+    margin-bottom: vw($mobile, 11px);
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: rem(0);
+    }
+  }
+}
+
 .price {
   padding-top: vw($mobile, 46px);
   &__title,

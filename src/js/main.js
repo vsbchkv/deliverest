@@ -33,68 +33,31 @@ $(document).ready(function () {
     $(this).toggleClass('text-field--expanded');
   });
 
-  /*var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 0,
-    centeredSlides: true,
-    //slidesPerGroup: 3,
-    loop: true,
-    //loopFillGroupWithBlank: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });*/
-
-  $('.js-slider').slick({
-    centerMode: true,
-    variableWidth: true,
-    //customPaging: '60px',
-    //centerPadding: '60px',
-    slidesToShow: 3,
-    focusOnSelect: true,
-    //arrows: true,
-    appendArrows: $('.custom-nav1'),
-    dots: true,
-    dotsClass: 'slick-dots',
-    appendDots: $('.custom-nav1'),
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 1,
-          //dots: false
+  function sliderOptions(nav) {
+    return {
+      centerMode: true,
+      variableWidth: true,
+      //customPaging: '60px',
+      //centerPadding: '60px',
+      slidesToShow: 3,
+      focusOnSelect: true,
+      appendArrows: nav,
+      dots: true,
+      dotsClass: 'slick-dots',
+      appendDots: nav,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 1,
+          }
         }
-      }
-    ]
-  });
+      ]
+    }
+  }
 
-  $('.js-slider2').slick({
-    centerMode: true,
-    variableWidth: true,
-    //customPaging: '60px',
-    //centerPadding: '60px',
-    slidesToShow: 3,
-    focusOnSelect: true,
-    //arrows: true,
-    appendArrows: $('.custom-nav2'),
-    dots: true,
-    dotsClass: 'slick-dots',
-    appendDots: $('.custom-nav2'),
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 1,
-          //dots: false
-        }
-      }
-    ]
-  });
+  $('.js-slider').slick(sliderOptions($('.custom-nav1')));
+  $('.js-slider2').slick(sliderOptions($('.custom-nav2')));
 
   $('.js-slider-mob').slick({
     mobileFirst: true,
@@ -114,14 +77,3 @@ $(document).ready(function () {
     ]
   });
 });
-
-/*document.addEventListener( 'DOMContentLoaded', function() {
-  var splide = new Splide( '.splide', {
-    type     : 'loop',
-    width   : '30vw',
-    focus    : 'center',
-    autoWidth: true,
-  } );
-
-  splide.mount();
-} );*/

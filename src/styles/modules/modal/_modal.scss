@@ -8,7 +8,7 @@
   overflow-y: auto;
 
   @media screen and (min-width: $desktop) {
-    width: rem(808);
+    width: rem(646);
     border-radius: rem(12);
     filter: drop-shadow(0 5px 40px rgba(23, 11, 69, 0.12));
   }
@@ -27,10 +27,10 @@
     cursor: pointer;
 
     @media screen and (min-width: $desktop) {
-      top: rem(24);
-      right: rem(24);
-      width: rem(48);
-      height: rem(48);
+      top: rem(20);
+      right: rem(20);
+      width: rem(38);
+      height: rem(38);
     }
 
     &:hover {
@@ -42,7 +42,7 @@
       fill: currentColor;
 
       @media screen and (min-width: $desktop) {
-        width: 67%;
+        width: 68%;
       }
     }
   }
@@ -51,7 +51,7 @@
     padding: vw($mobile, 18px) vw($mobile, 23px) vw($mobile, 46px);
 
     @media screen and (min-width: $desktop) {
-      padding: rem(40) rem(46) rem(49);
+      padding: rem(33) rem(37) rem(37);
     }
   }
 }

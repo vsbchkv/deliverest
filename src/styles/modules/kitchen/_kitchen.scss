@@ -1,12 +1,13 @@
 .kitchen {
-  background-color: $purple;
   padding-top: vw($mobile, 40px);
   padding-bottom: vw($mobile, 14px);
+  background-color: $purple;
   background-color: #42386b;
 
   @media screen and (min-width: $desktop) {
-    padding-top: rem(118);
-    padding-bottom: rem(633);
+    overflow: hidden;
+    padding-top: rem(94);
+    padding-bottom: rem(504);
   }
 
   @media screen and (max-width: $desktop - 1) {
@@ -14,10 +15,10 @@
   }
 
   &__content {
+
     @media screen and (min-width: $desktop) {
-      padding-left: rem(20);
       position: relative;
-      margin: 0 58% 0 0;
+      margin: 0 38% 0 0;
     }
   }
 
@@ -38,7 +39,7 @@
     margin-bottom: vw($mobile, 20px);
 
     @media screen and (min-width: $desktop) {
-      margin-bottom: rem(36);
+      margin-bottom: rem(29);
     }
   }
 
@@ -53,7 +54,7 @@
       }
 
       p + p {
-        margin-top: 28px;
+        margin-top: rem(24);
       }
     }
   }
@@ -64,9 +65,9 @@
 
     @media screen and (min-width: $desktop) {
       position: absolute;
-      top: rem(-119);
-      right: rem(-1330);
-      width: rem(2558);
+      top: rem(-95);
+      right: rem(-1062);
+      width: rem(2050);
     }
     @media screen and (max-width: $desktop - 1) {
       img {

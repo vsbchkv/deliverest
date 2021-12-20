@@ -70,14 +70,17 @@
     top: vw($mobile, 14px);
     left: 0;
     width: 70%;
-    text-align: right;
+    padding: vw($mobile, 7px) 0;
+    color: $accentColor;
     background-color: $white;
     border-radius: 3px;
-    color: $accentColor;
+    filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.24));
+    z-index: 2;
 
     @media screen and (min-width: $desktop) {
       top: rem(22);
       width: 100%;
+      padding: 7px 0;
       transform: translate(rem(22), rem(-4));
     }
 
@@ -88,10 +91,9 @@
 
   &__item {
     padding: vw($mobile, 6px) vw($mobile, 18px);
-    text-align: center;
 
     @media screen and (min-width: $desktop) {
-      padding: 6px 22px;
+      padding: 11px 18px;
     }
 
     // &:hover {
