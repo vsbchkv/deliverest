@@ -17,6 +17,10 @@
     //padding-top: rem(10);
   }
 
+  &__wrapper {
+    position: relative;
+  }
+
   &__title {
     margin-bottom: vw($mobile, 25px);
     line-height: 1.2;
@@ -59,8 +63,8 @@
 
     @media screen and (min-width: $desktop) {
       bottom: rem(0);
-      left: rem(834);
-      top: rem(10);
+      left: rem(393);
+      top: rem(-98);
       width: rem(904);
     }
 

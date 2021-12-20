@@ -47,7 +47,7 @@ $(document).ready(function () {
       appendDots: nav,
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 1280,
           settings: {
             slidesToShow: 1,
           }

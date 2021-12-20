@@ -17,8 +17,11 @@
 
     @media screen and (min-width: $desktop) {
       width: 100vw;
-      //margin: 0 -20vw;
-      margin-left: calc((100vw - 1004px) / 2 * -1);
+      margin: 0 0 0 calc((100vw - 984px) / 2 * -1);
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-left: calc((100vw - 984px) / 2 * -1);
     }
   }
 
@@ -27,6 +30,9 @@
 
     @media screen and (min-width: $desktop) {
       position: relative;
+    }
+
+    @media screen and (min-width: 1280px) {
       width: 30vw;
       min-height: 662px;
       margin: 0 7.3vw;
@@ -40,7 +46,7 @@
 
       .slide__text {
 
-        @media screen and (min-width: $desktop) {
+        @media screen and (min-width: 1280px) {
           display: none;
           opacity: 0;
         }
@@ -52,6 +58,10 @@
       .slide {
 
         @media screen and (min-width: $desktop) {
+          //
+        }
+
+        @media screen and (min-width: 1280px) {
           width: 53vw;
           transform: translate(-11.6vw, 0);
           opacity: 1;
@@ -132,11 +142,14 @@
   background-color: rgba(212, 204, 242, 0.30196078431372547);
 
   @media screen and (min-width: $desktop) {
+    padding: 40px 30px 30px;
+    transition: all 300ms linear;
+  }
+
+  @media screen and (min-width: 1280px) {
     position: absolute;
     top: 0;
     left: 0;
-    padding: 40px 30px 30px;
-    transition: all 300ms linear;
     transform: translateY(120px);
     border-radius: 12px;
   }
