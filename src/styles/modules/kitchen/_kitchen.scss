@@ -1,8 +1,12 @@
 .kitchen {
   padding-top: vw($mobile, 40px);
   padding-bottom: vw($mobile, 14px);
-  background-color: $purple;
+  //background-color: $purple;
   background-color: #42386b;
+  //background-image: radial-gradient(at 100% 10%, #b5b1c5 50px, #42386b 50%);
+  background-image: radial-gradient(circle at 90% -20%, #b5b1c5, #42386b);
+  background-repeat: no-repeat;
+  //background-position: 0 -200px;
 
   @media screen and (min-width: $desktop) {
     overflow: hidden;
@@ -65,16 +69,17 @@
 
     @media screen and (min-width: $desktop) {
       position: absolute;
-      top: rem(-95);
-      right: rem(-1062);
-      width: rem(2050);
+      top: rem(-35);
+      right: rem(-752);
+      width: rem(800);
     }
+
     @media screen and (max-width: $desktop - 1) {
       img {
-        width: 154%;
-        object-position: center;
         position: relative;
         left: -14%;
+        width: 154%;
+        object-position: center;
       }
     }
 
@@ -84,8 +89,8 @@
 
       @media screen and (max-width: $desktop - 1) {
         position: relative;
-        width: 157%;
         left: -15%;
+        width: 157%;
       }
     }
   }

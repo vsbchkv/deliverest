@@ -62,9 +62,9 @@
     }
 
     @media screen and (min-width: $desktop) {
-      bottom: rem(0);
-      left: rem(393);
-      top: rem(-98);
+      bottom: rem(-121px);
+      left: auto;
+      right: /*rem(393)*/-200px;
       width: rem(904);
     }
 

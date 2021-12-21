@@ -91,6 +91,13 @@ body {
     padding-right: rem($desktopPadding);
     padding-left: rem($desktopPadding);
   }
+
+  &--wide {
+
+    @media screen and (min-width: $desktop) {
+      max-width: $desktopWideWrapper;
+    }
+  }
 }
 
 .icon {

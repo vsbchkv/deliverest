@@ -27,8 +27,8 @@
     background-size: vw($mobile, 550px);
 
     @media screen and (min-width: $desktop) {
-      background-position: 70px -300px;
-      background-size: 1098px;
+      background-position: -210px -300px;
+      background-size: 898px;
     }
 
     @supports (background-image: image-set(url('../media/images/D.webp') 1x)) {
