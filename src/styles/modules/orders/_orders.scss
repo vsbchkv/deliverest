@@ -11,6 +11,8 @@
     text-align: left;
     //font-size: rem(26);
     /*background: #20183e url('../media/images/grad.png') no-repeat 0 0;*/
+    background-image: radial-gradient(circle at -120% -350%, #51dfa9, #20183e);
+    background-repeat: no-repeat;
   }
 
   &__content {
@@ -35,6 +37,13 @@
 
     @media screen and (min-width: $desktop) {
       margin-bottom: 55px;
+    }
+
+    p + p {
+
+      @media screen and (min-width: $desktop) {
+        margin-top: rem(36);
+      }
     }
   }
 
@@ -68,9 +77,9 @@
 
     @media screen and (min-width: $desktop) {
       position: absolute;
-      top: -102px;
-      left: -994px;
-      width: 886px;
+      top: -113px;
+      left: -1014px;
+      width: 924px;
       margin: 0;
     }
 

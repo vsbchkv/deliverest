@@ -1,0 +1,167 @@
+.price {
+  padding: 0 0 vw($mobile, 42px);
+
+  @media screen and (min-width: $desktop) {
+    padding: 0 0 rem(76);
+  }
+
+  &__title {
+    margin-bottom: vw($mobile, 10px);
+    text-align: center;
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: rem(21);
+    }
+  }
+
+  &__text {
+    margin: 0 vw($mobile, -3px) vw($mobile, 26px);
+    text-align: center;
+
+    @media screen and (min-width: $desktop) {
+      margin: 0 0 29px;
+    }
+  }
+
+  &__box {
+
+    @media screen and (min-width: $desktop) {
+      margin: 0 20px;
+    }
+  }
+
+  &__notice {
+    margin-top: vw($mobile, 17px);
+    font-weight: 700;
+    color: #b1b1b1;
+
+    @media screen and (min-width: $desktop) {
+      margin-top: 33px;
+      margin-left: 18px;
+    }
+  }
+}
+
+.price-box {
+  padding: vw($mobile, 5px) vw($mobile, 11px) vw($mobile, 4px);
+  background-color: $white;
+  border-radius: vw($mobile, 6px);
+  filter: drop-shadow(0 vw($mobile, 3px) vw($mobile, 20px) rgba(23, 11, 69, 0.12));
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+    padding: 10px 11px 37px;
+    border-radius: 6px;
+    filter: drop-shadow(0 3px 20px rgba(23, 11, 69, 0.12));
+  }
+
+  &__sum {
+    margin-bottom: vw($mobile, 23px);
+    text-align: center;
+
+    @media screen and (min-width: $desktop) {
+      width: 360px;
+      margin-right: 46px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__number {
+    margin-bottom: vw($mobile, -6px);
+    font-size: vw($mobile, 110px);
+    font-weight: 700;
+    line-height: 1;
+    color: $green;
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: -8px;
+      font-size: 176px;
+    }
+
+    sup {
+      position: relative;
+      top: vw($mobile, 14px);
+      left: vw($mobile, -9px);
+      font-size: vw($mobile, 55px);
+
+      @media screen and (min-width: $desktop) {
+        top: 20px;
+        left: -11px;
+        font-size: 88px;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: vw($mobile, -4px);
+    font-size: vw($mobile, 19px);
+    font-weight: 700;
+    color: $green;
+    text-transform: uppercase;
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: -1px;
+      font-size: 30px;
+    }
+  }
+
+  &__subtitle {
+    font-size: vw($mobile, 8px);
+    font-weight: 400;
+    color: #9a9a9a;
+
+    @media screen and (min-width: $desktop) {
+      font-size: 13px;
+    }
+  }
+
+  &__descr {
+
+    @media screen and (min-width: $desktop) {
+      position: relative;
+      top: 16px;
+      padding: 10px 0;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: -4%;
+        left: -63px;
+        width: 2px;
+        height: 104%;
+        background-color: $lightGray;
+      }
+    }
+  }
+
+  &__list {
+    margin-top: vw($mobile, 2px);
+
+    @media screen and (min-width: $desktop) {
+      margin-top: 2px;
+    }
+
+    li {
+      position: relative;
+      padding: vw($mobile, 2px) 0 vw($mobile, 2px) vw($mobile, 9px);
+
+      @media screen and (min-width: $desktop) {
+        padding: rem(4) 0 rem(4) rem(12);
+      }
+
+      &:before {
+        content: '\2022';
+        position: absolute;
+        top: vw($mobile, -1px);
+        left: 0;
+        font-size: vw($mobile, 18px);
+
+        @media screen and (min-width: $desktop) {
+          top: 3px;
+          font-size: 23px;
+        }
+      }
+    }
+  }
+}

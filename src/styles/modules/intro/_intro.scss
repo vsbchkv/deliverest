@@ -33,7 +33,8 @@
     @media screen and (min-width: $desktop) {
       position: relative;
       z-index: 2;
-      max-width: 72%;
+      width: 72%;
+      max-width: 705px;
       margin-bottom: rem(46);
       font-size: rem(58);
     }
