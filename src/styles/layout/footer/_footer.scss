@@ -14,12 +14,14 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: vw($mobile, 22px);
+    margin-bottom: vw($mobile, 25px);
 
     @media screen and (min-width: $desktop) {
       display: block;
       grid-area: head;
       margin-bottom: rem(22);
+      padding-top: rem(6);
+      padding-left: 6%;
     }
   }
 
@@ -35,40 +37,41 @@
   &__contacts {
 
     @media screen and (min-width: $desktop) {
-      padding-top: rem(20);
-      padding-left: rem(40);
+      padding-top: rem(8);
+      padding-left: rem(36);
     }
   }
 
   &__logo {
 
     @media screen and (min-width: $desktop) {
-      max-width: rem(205);
+      max-width: rem(166);
     }
   }
 
   &__nav {
-    padding-top: vw($mobile, 24px);
+    padding-top: vw($mobile, 23px);
 
     @media screen and (min-width: $desktop) {
       display: grid;
       grid-template-rows: rem(40) 1fr;
-      grid-template-columns: 1.35fr 1fr 1.02fr;
+      grid-template-columns: 2.52fr 1fr 1.02fr;
       grid-template-areas:
         'menu locales head'
         'menu social head';
       align-items: start;
       padding-top: rem(18);
-      row-gap: rem(15);
+      row-gap: rem(43);
     }
   }
 
   &__link {
     display: block;
     font-size: vw($mobile, 14px);
-    line-height: 1.4;
+    line-height: 1.35;
 
     @media screen and (min-width: $desktop) {
+      line-height: 1.4;
       font-size: rem(18);
     }
 
@@ -90,9 +93,9 @@
     @media screen and (min-width: $desktop) {
       grid-area: menu;
       margin-bottom: rem(22);
-      padding-right: 12%;
+      padding-right: 8%;
       font-size: rem(22);
-      column-gap: rem(5);
+      column-gap: rem(20);
     }
   }
 
@@ -119,8 +122,12 @@
         display: block;
       }
 
+      .locales__item .locale-dropdown__current {
+        min-width: 135px;
+      }
+
       .locales__item + .locales__item {
-        margin-top: rem(10);
+        margin-top: rem(12);
         margin-left: 0;
       }
     }
@@ -131,9 +138,10 @@
       @media screen and (min-width: $desktop) {
         display: block;
         grid-area: locales;
-        padding: 0;
+        padding: rem(8) 0 0;
         font-size: rem(18);
         background-color: inherit;
+        margin-bottom: 10px;
       }
     }
   }
