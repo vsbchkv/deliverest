@@ -1,7 +1,6 @@
 .orders {
   padding: vw($mobile, 40px) 0 vw($mobile, 7px);
   text-align: center;
-  //font-size: vw($mobile, 14px);
   color: $white;
   background-color: #20183e;
 
@@ -9,7 +8,6 @@
     position: relative;
     padding: rem(167) 0 rem(129);
     text-align: left;
-    //font-size: rem(26);
     /*background: #20183e url('../media/images/grad.png') no-repeat 0 0;*/
     background-image: radial-gradient(circle at -120% -350%, #51dfa9, #20183e);
     background-repeat: no-repeat;
@@ -36,7 +34,7 @@
     margin-bottom: vw($mobile, 22px);
 
     @media screen and (min-width: $desktop) {
-      margin-bottom: 55px;
+      margin-bottom: rem(55);
     }
 
     p + p {
@@ -65,9 +63,9 @@
     margin-right: vw($mobile, 15px);
 
     @media screen and (min-width: $desktop) {
-      width: 39px;
+      width: rem(39);
       margin-top: 0;
-      margin-right: 20px;
+      margin-right: rem(20);
     }
   }
 
@@ -77,9 +75,9 @@
 
     @media screen and (min-width: $desktop) {
       position: absolute;
-      top: -113px;
-      left: -1014px;
-      width: 924px;
+      top: rem(-113);
+      left: rem(-1014);
+      width: rem(924);
       margin: 0;
     }
 

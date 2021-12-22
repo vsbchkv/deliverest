@@ -19,14 +19,14 @@
     text-align: center;
 
     @media screen and (min-width: $desktop) {
-      margin: 0 0 29px;
+      margin: 0 0 rem(29);
     }
   }
 
   &__box {
 
     @media screen and (min-width: $desktop) {
-      margin: 0 20px;
+      margin: 0 rem(20);
     }
   }
 
@@ -36,8 +36,8 @@
     color: #b1b1b1;
 
     @media screen and (min-width: $desktop) {
-      margin-top: 33px;
-      margin-left: 18px;
+      margin-top: rem(33);
+      margin-left: rem(18);
     }
   }
 }
@@ -51,8 +51,8 @@
   @media screen and (min-width: $desktop) {
     display: flex;
     align-items: center;
-    padding: 10px 11px 37px;
-    border-radius: 6px;
+    padding: rem(10) rem(11) rem(37);
+    border-radius: rem(6);
     filter: drop-shadow(0 3px 20px rgba(23, 11, 69, 0.12));
   }
 
@@ -61,8 +61,8 @@
     text-align: center;
 
     @media screen and (min-width: $desktop) {
-      width: 360px;
-      margin-right: 46px;
+      width: rem(360);
+      margin-right: rem(46);
       margin-bottom: 0;
     }
   }
@@ -75,8 +75,8 @@
     color: $green;
 
     @media screen and (min-width: $desktop) {
-      margin-bottom: -8px;
-      font-size: 176px;
+      margin-bottom: rem(-8);
+      font-size: rem(176);
     }
 
     sup {
@@ -86,9 +86,9 @@
       font-size: vw($mobile, 55px);
 
       @media screen and (min-width: $desktop) {
-        top: 20px;
-        left: -11px;
-        font-size: 88px;
+        top: rem(20);
+        left: rem(-11);
+        font-size: rem(88);
       }
     }
   }
@@ -101,8 +101,8 @@
     text-transform: uppercase;
 
     @media screen and (min-width: $desktop) {
-      margin-bottom: -1px;
-      font-size: 30px;
+      margin-bottom: rem(-1);
+      font-size: rem(30);
     }
   }
 
@@ -112,7 +112,7 @@
     color: #9a9a9a;
 
     @media screen and (min-width: $desktop) {
-      font-size: 13px;
+      font-size: rem(13);
     }
   }
 
@@ -120,15 +120,15 @@
 
     @media screen and (min-width: $desktop) {
       position: relative;
-      top: 16px;
-      padding: 10px 0;
+      top: rem(16);
+      padding: rem(10) 0;
 
       &:before {
         content: '';
         position: absolute;
         top: -4%;
-        left: -63px;
-        width: 2px;
+        left: rem(-63);
+        width: rem(2);
         height: 104%;
         background-color: $lightGray;
       }
@@ -139,7 +139,7 @@
     margin-top: vw($mobile, 2px);
 
     @media screen and (min-width: $desktop) {
-      margin-top: 2px;
+      margin-top: rem(2);
     }
 
     li {
@@ -158,8 +158,8 @@
         font-size: vw($mobile, 18px);
 
         @media screen and (min-width: $desktop) {
-          top: 3px;
-          font-size: 23px;
+          top: rem(3);
+          font-size: rem(23);
         }
       }
     }

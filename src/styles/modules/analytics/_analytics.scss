@@ -4,7 +4,7 @@
   text-align: center;
 
   @media screen and (min-width: $desktop) {
-    padding: rem(77) 0 15px;
+    padding: rem(77) 0 rem(15);
   }
 
   &__title {

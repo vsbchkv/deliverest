@@ -27,8 +27,8 @@
     background-size: vw($mobile, 550px);
 
     @media screen and (min-width: $desktop) {
-      background-position: -210px -300px;
-      background-size: 898px;
+      background-position: rem(-210) rem(-300);
+      background-size: rem(898);
     }
 
     @supports (background-image: image-set(url('../media/images/D.webp') 1x)) {
@@ -38,10 +38,6 @@
 
   &__wrapper {
     position: relative;
-
-    @media screen and (min-width: $desktop) {
-      //max-width: 900px;
-    }
   }
 
   &__content {
@@ -65,7 +61,7 @@
     margin-bottom: vw($mobile, 39px);
 
     @media screen and (min-width: $desktop) {
-      margin-bottom: 40px;
+      margin-bottom: rem(40);
       padding-right: 5%;
     }
   }
@@ -84,9 +80,9 @@
     margin-right: vw($mobile, 15px);
 
     @media screen and (min-width: $desktop) {
-      width: 39px;
+      width: rem(39);
       margin-top: 0;
-      margin-right: 20px;
+      margin-right: rem(20);
     }
   }
 
@@ -96,9 +92,9 @@
 
     @media screen and (min-width: $desktop) {
       position: absolute;
-      top: -54px;
-      left: -534px;
-      width: 419px;
+      top: rem(-54);
+      left: rem(-534);
+      width: rem(419);
       margin: 0;
     }
 

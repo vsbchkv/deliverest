@@ -81,7 +81,7 @@
     @media screen and (min-width: $desktop) {
       top: rem(22);
       width: 100%;
-      padding: 7px 0;
+      padding: rem(7) 0;
       transform: translate(rem(22), rem(-4));
     }
 
@@ -94,7 +94,7 @@
     padding: vw($mobile, 6px) vw($mobile, 18px);
 
     @media screen and (min-width: $desktop) {
-      padding: 11px 18px;
+      padding: rem(11) rem(18);
     }
   }
 }

@@ -37,9 +37,9 @@
 
     @media screen and (min-width: $desktop) {
       position: absolute;
-      top: -171px;
-      right: -959px;
-      width: 1001px;
+      top: rem(-171);
+      right: rem(-959);
+      width: rem(1001);
       margin: 0;
     }
 

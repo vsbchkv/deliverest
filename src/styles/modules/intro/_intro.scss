@@ -32,7 +32,7 @@
       position: relative;
       z-index: 2;
       width: 72%;
-      max-width: 705px;
+      max-width: rem(705);
       margin-bottom: rem(46);
       font-size: rem(58);
     }
@@ -63,7 +63,7 @@
     @media screen and (min-width: $desktop) {
       bottom: rem(-121px);
       left: auto;
-      right: /*rem(393)*/-200px;
+      right: rem(-200);
       width: rem(904);
     }
 

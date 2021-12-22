@@ -156,8 +156,8 @@
   @media screen and (min-width: $desktop) {
     align-items: center;
     width: 44.5%;
-    min-height: 39px;
-    margin-bottom: 49px;
+    min-height: rem(39);
+    margin-bottom: rem(49);
     padding-right: 3%;
   }
 }

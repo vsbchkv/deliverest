@@ -1,11 +1,9 @@
 .text-field {
   @extend %input-unstyled;
-  height: vw($mobile, 18px); //48px
+  height: vw($mobile, 18px);
   padding: 0;
   font-size: vw($mobile, 14px);
   color: $defaultText;
-  // letter-spacing: .015em;
-  // background-color: rgba(9, 19, 33, 0.06);
   border: 0;
   border-bottom: 2px solid rgba(23, 11, 69, 0.12);
 
@@ -35,11 +33,6 @@
     }
   }
 
-  &::placeholder {
-    // color: $grayLight2;
-    // letter-spacing: .0002em;
-  }
-
   &--error {
     // box-shadow: 0 0 0 1px rgba(#F43319, 0.8);
   }
@@ -47,14 +40,9 @@
   &:focus {
     outline: 0;
     border-color: $accentColor;
-
-    &::placeholder {
-      // color: $grayLight3;
-    }
   }
 
   &:disabled {
-    // background-color: $grayLightest;
 
     &::placeholder {
       opacity: 0.5;
@@ -100,7 +88,6 @@
     position: absolute;
     top: 0;
     left: 0;
-    //font-size: 0.825em;
     color: #9a9a9a;
     transform: translateY(0);
     transition-duration: 300ms;

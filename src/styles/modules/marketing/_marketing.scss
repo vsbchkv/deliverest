@@ -31,9 +31,9 @@
     margin: 0 0 vw($mobile, 26px);
 
     @media screen and (min-width: $desktop) {
-      max-width: 1440px;
-      height: 50px;
-      margin: 0 0 36px;
+      max-width: rem(1440);
+      height: rem(50);
+      margin: 0 0 rem(36);
     }
   }
 
@@ -64,8 +64,8 @@
 
     @media screen and (min-width: $desktop) {
       top: 0;
-      width: 64px;
-      height: 45px;
+      width: rem(64);
+      height: rem(45);
     }
 
     &:not(:disabled) {
@@ -100,10 +100,10 @@
       border-radius: 50%;
 
       @media screen and (min-width: $desktop) {
-        width: 19px;
-        height: 19px;
-        margin: 3px;
-        border-width: 6px;
+        width: rem(19);
+        height: rem(19);
+        margin: rem(3);
+        border-width: rem(6);
       }
     }
 
@@ -126,10 +126,9 @@
 
   @media screen and (min-width: $desktop) {
     width: calc(33.3% - 40px);
-    //max-width: 308px;
-    margin: 0 0 60px;
-    padding: 44px 10px /*403px*/21.7%;
-    border-radius: 12px;
+    margin: 0 0 rem(60);
+    padding: rem(44) rem(10) 21.7%;
+    border-radius: rem(12);
   }
 
   &__title {
@@ -137,7 +136,7 @@
     font-weight: bold;
 
     @media screen and (min-width: $desktop) {
-      margin-bottom: 21px;
+      margin-bottom: rem(21);
     }
   }
 
@@ -147,9 +146,9 @@
     margin-bottom: vw($mobile, 19px);
 
     @media screen and (min-width: $desktop) {
-      max-width: 450px;
+      max-width: rem(450);
       margin: 0 auto rem(10);
-      font-size: 20px;
+      font-size: rem(20);
     }
   }
 
@@ -158,10 +157,6 @@
     left: 0;
     right: 0;
     bottom: 0;
-
-    @media screen and (min-width: $desktop) {
-      //
-    }
 
     img {
       display: block;
