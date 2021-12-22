@@ -1,7 +1,8 @@
 .locales {
   padding: vw($mobile, 7px) 0;
+
   @media screen and (min-width: $desktop) {
-    padding: rem(24) 0 rem(12);
+    padding: rem(14) 0;
   }
 
   &__wrapper {
@@ -10,42 +11,42 @@
   }
 
   &__item {
+    $arrowIconSize: 3px;
     position: relative;
     display: flex;
     flex: 1 1 50%;
     font-weight: 700;
     line-height: 1;
-    $arrowIconSize: 3px;
     color: $white;
 
     &::after {
-      content: "";
+      content: '';
       width: 0;
       height: 0;
+      margin-left: vw($mobile, 8px);
       border-left: vw($mobile, $arrowIconSize) solid transparent;
       border-right: vw($mobile, $arrowIconSize) solid transparent;
       border-top: vw($mobile, $arrowIconSize) solid currentColor;
-      margin-left: vw($mobile, 8px);
       transform: translateY(vw($mobile, 3px));
     }
 
     @media screen and (min-width: $desktop) {
+      $arrowIconSize: 4px;
       flex: 0 1 auto;
       cursor: pointer;
-      $arrowIconSize: 5px;
 
       & + & {
-        margin-left: rem(34);
+        margin-left: rem(36);
       }
 
       &::after {
-        content: "";
+        content: '';
         width: 0;
         height: 0;
+        margin-left: rem(12);
         border-left: rem($arrowIconSize) solid transparent;
         border-right: rem($arrowIconSize) solid transparent;
         border-top: rem($arrowIconSize) solid currentColor;
-        margin-left: rem(12);
         transform: translateY(rem(5px));
       }
     }
@@ -65,17 +66,17 @@
 .locale-dropdown {
 
   &__list {
-    display: none;
     position: absolute;
     top: vw($mobile, 14px);
     left: 0;
+    z-index: 2;
+    display: none;
     width: 70%;
     padding: vw($mobile, 7px) 0;
     color: $accentColor;
     background-color: $white;
     border-radius: 3px;
     filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.24));
-    z-index: 2;
 
     @media screen and (min-width: $desktop) {
       top: rem(22);
@@ -95,9 +96,5 @@
     @media screen and (min-width: $desktop) {
       padding: 11px 18px;
     }
-
-    // &:hover {
-    //   background-color: $accentColor;
-    // }
   }
 }

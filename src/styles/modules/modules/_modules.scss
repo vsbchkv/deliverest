@@ -2,7 +2,7 @@
   padding: vw($mobile, 40px) 0  vw($mobile, 36px);
 
   @media screen and (min-width: $desktop) {
-    padding: rem(89) 0 rem(5);
+    padding: rem(89) 0 rem(60);
   }
 
   &__wrapper {
@@ -18,7 +18,7 @@
 
     @media screen and (min-width: $desktop) {
       max-width: 1000px;
-      margin: 0 auto rem(41);
+      margin: 0 auto rem(35);
     }
   }
 
@@ -48,21 +48,22 @@
 
     @media screen and (min-width: $desktop) {
       flex: 0 0 170px;
-      margin: 0 5.3% 91px;
+      margin: 0 5.3% 36px;
       text-align: center;
     }
   }
 
   &__pic {
-    margin-right: 16px;
 
     @media screen and (max-width: $desktop - 1px) {
       max-width: vw($mobile, 32px);
+      margin-right: vw($mobile, 16px);
     }
 
     @media screen and (min-width: $desktop) {
       display: block;
-      margin: 0 auto 17px;
+      margin: 0 auto 9px;
+      width: 150px;
     }
   }
 }

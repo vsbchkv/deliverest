@@ -34,7 +34,7 @@
 
     @media screen and (min-width: 1441px) {
       width: 30vw;
-      min-height: 662px;
+      min-height: 645px;
       margin: 0 7.3vw;
       //transform: scale(1);
       transition: all 300ms linear;
@@ -151,7 +151,7 @@
 
   @media screen and (min-width: $desktop) {
     //overflow: hidden;
-    padding: 40px 30px 30px;
+    padding: 32px 22px 23px;
     transition: all 300ms linear;
   }
 
@@ -167,7 +167,7 @@
     margin: 0 vw($mobile, -5px) vw($mobile, 26px);
 
     @media screen and (min-width: $desktop) {
-      margin: 0 6% 21px;
+      margin: 0 6% 16px;
     }
   }
 

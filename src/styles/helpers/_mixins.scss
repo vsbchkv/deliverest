@@ -137,11 +137,12 @@
   display: flex;
   flex-wrap: wrap;
   text-align: left;
-  line-height: 1;
+  line-height: 1.15;
   font-weight: 300;
 
   @media screen and (min-width: $desktop) {
     justify-content: space-between;
+    line-height: 1;
   }
 }
 

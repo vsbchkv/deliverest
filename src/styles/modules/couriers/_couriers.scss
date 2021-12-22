@@ -1,5 +1,5 @@
 .couriers {
-  padding-top: vw($mobile, 40px);
+  padding-top: vw($mobile, 43px);
 
   @media screen and (max-width: $desktop - 1) {
     overflow: hidden;
@@ -31,7 +31,7 @@
     @media screen and (max-width: $desktop - 1) {
       z-index: -1;
       max-width: 100vw;
-      height: vw($mobile, 436px);
+      height: vw($mobile, 442px);
       margin: 0 vw($mobile, -12px);
     }
 
@@ -49,14 +49,14 @@
       @media screen and (max-width: $desktop - 1) {
         position: relative;
         left: -86%;
-        top: vw($mobile, -38px);
+        top: vw($mobile, -31px);
         width: 282%;
       }
     }
   }
 
   &__title {
-    margin-bottom: vw($mobile, 22px);
+    margin-bottom: vw($mobile, 19px);
 
     @media screen and (max-width: $desktop - 1) {
       text-align: center;
@@ -68,7 +68,7 @@
   }
 
   &__desc {
-    margin-bottom: vw($mobile, 40px);
+    margin-bottom: vw($mobile, 35px);
 
     @media screen and (max-width: $desktop - 1) {
       text-align: center;
@@ -81,18 +81,18 @@
 
   &__list {
     @extend %list-unstyled;
-    line-height: 1;
+    line-height: 1.15;
     font-weight: 300;
     color: $darkGray;
+
+    @media screen and (min-width: $desktop) {
+      line-height: 1;
+    }
   }
 
   &__list-item {
     display: flex;
-    line-height: 1;
-
-    @media screen and (min-width: $desktop) {
-      align-items: center;
-    }
+    align-items: center;
 
     & + & {
       margin-top: vw($mobile, 34px);

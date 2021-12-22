@@ -48,7 +48,7 @@
   }
 
   &__content {
-    padding: vw($mobile, 18px) vw($mobile, 23px) vw($mobile, 46px);
+    padding: vw($mobile, 18px) vw($mobile, 23px) vw($mobile, 24px);
 
     @media screen and (min-width: $desktop) {
       padding: rem(33) rem(37) rem(37);

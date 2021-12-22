@@ -4,24 +4,25 @@
   position: sticky;
   top: $localesHeight * -1;
   z-index: 5;
-  height: vw($mobile, 65px);
+  height: vw($mobile, 64px);
   color: $white;
 
   & + .main {
-    padding-top: $headerHeight;
+    //padding-top: $headerHeight;
     padding-top: 0;
   }
 
   @media screen and (min-width: $desktop) {
     $localesHeight: rem(50);
     $headerHeight: rem(105);
-    height: $headerHeight;
     top: $localesHeight * -1;
+    height: $headerHeight;
   }
 
   &__locales {
-    background-color: $black;
     font-size: vw($mobile, 12px);
+    background-color: $black;
+
     @media screen and (min-width: $desktop) {
       font-size: rem(14);
     }
@@ -29,10 +30,11 @@
 
   &__btn {
     display: none;
+
     @media screen and (min-width: $desktop) {
       display: inline-flex;
-      padding: 0 rem(14);
       margin-left: auto;
+      padding: 0 rem(14);
     }
   }
 
@@ -63,7 +65,7 @@
   cursor: pointer;
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     width: calc(100% + vw($mobile, 22px));
     height: calc(100% + vw($mobile, 22px));
@@ -86,13 +88,13 @@
     }
 
     &:before {
-      content: "";
+      content: '';
       position: absolute;
       top: vw($mobile, -4px);
     }
 
     &:after {
-      content: "";
+      content: '';
       position: absolute;
       top: vw($mobile, 4px);
     }
@@ -122,10 +124,10 @@
 }
 
 .header-nav {
+  $headerNavVerticalPadding: rem(11);
   padding: vw($mobile, 10px) 0;
   background-color: $accentColor;
   box-shadow: 0 0 32px rgba(0, 0, 0, 0.56);
-  $headerNavVerticalPadding: rem(12);
 
   @media screen and (min-width: $desktop) {
     padding: $headerNavVerticalPadding 0;
@@ -133,6 +135,11 @@
 
   &__navigation {
     display: flex;
+
+    @media screen and (max-width: $desktop - 1) {
+      align-items: center;
+      justify-content: space-between;
+    }
   }
 
   &__list {
@@ -140,7 +147,7 @@
 
     @media screen and (min-width: $desktop) {
       display: flex;
-      margin-left: 7%;
+      margin-left: 5%;
     }
   }
 
@@ -152,28 +159,29 @@
       position: relative;
 
       &::after {
-        content: "";
+        content: '';
         position: absolute;
-        transform: translateY($headerNavVerticalPadding);
-        display: block;
-        width: 100%;
-        height: rem(8);
-        background-color: $green;
         bottom: 0;
+        width: 100%;
+        height: rem(6);
+        background-color: $green;
+        transform: translateY($headerNavVerticalPadding);
       }
     }
+
     & + & {
-      margin-left: rem(30);
+      margin-left: rem(32);
     }
   }
 
   &__link {
-    color: $white;
+    display: block;
     font-size: rem(21);
     font-weight: 700;
-    display: block;
+    color: $white;
 
-    &, &:hover {
+    &,
+    &:hover {
       text-decoration: none;
     }
   }

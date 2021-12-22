@@ -1,6 +1,6 @@
 .intro {
   position: relative;
-  padding: vw($mobile, 40px) 0 vw($mobile, 298px);
+  padding: vw($mobile, 36px) 0 vw($mobile, 298px);
   color: $white;
   background: $darkGray;
 
@@ -10,12 +10,10 @@
   }
 
   @media screen and (min-width: $desktop) {
-    padding: rem(111) 0 rem(121);
+    padding: rem(101) 0 rem(121);
   }
 
-  @media screen and (min-width: $desktopMax) {
-    //padding-top: rem(10);
-  }
+  //@media screen and (min-width: $desktopMax) {}
 
   &__wrapper {
     position: relative;
@@ -57,9 +55,9 @@
     position: absolute;
 
     @media screen and (max-width: $desktop - 1px) {
-      bottom: 0;
-      left: 0;
-      width: 100vw;
+      bottom: vw($mobile, -298px);
+      left: -29vw;
+      width: 158vw;
     }
 
     @media screen and (min-width: $desktop) {

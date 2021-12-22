@@ -1,10 +1,10 @@
 .kitchen {
   padding-top: vw($mobile, 40px);
-  padding-bottom: vw($mobile, 14px);
+  padding-bottom: vw($mobile, 15px);
   //background-color: $purple;
   background-color: #42386b;
-  //background-image: radial-gradient(at 100% 10%, #b5b1c5 50px, #42386b 50%);
-  background-image: radial-gradient(circle at 90% -20%, #b5b1c5, #42386b);
+  background-image: radial-gradient(at 150% -210%, #b5b1c5 50px, #42386b 80%);
+  //background-image: radial-gradient(circle at 10% -220%, #b5b1c5, #42386b);
   background-repeat: no-repeat;
   //background-position: 0 -200px;
 
@@ -12,6 +12,8 @@
     overflow: hidden;
     padding-top: rem(94);
     padding-bottom: rem(504);
+    background-image: radial-gradient(circle at 90% -20%, #b5b1c5, #42386b);
+    background-repeat: no-repeat;
   }
 
   @media screen and (max-width: $desktop - 1) {
@@ -40,7 +42,7 @@
   }
 
   &__title {
-    margin-bottom: vw($mobile, 20px);
+    margin-bottom: vw($mobile, 18px);
 
     @media screen and (min-width: $desktop) {
       margin-bottom: rem(29);
