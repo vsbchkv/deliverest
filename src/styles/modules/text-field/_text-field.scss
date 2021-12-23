@@ -130,7 +130,7 @@
   }
 
   .chosen-single {
-    height: vw($mobile, 18px);
+    height: vw($mobile, 22px);
     padding-left: 0;
     background: none;
     border: solid rgba(23, 11, 69, 0.12);
@@ -145,7 +145,11 @@
 
   .chosen-drop {
     border-color: transparent;
-    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(0 vw($mobile, 8px) vw($mobile, 16px) rgba(0, 0, 0, 0.3));
+
+    @media screen and (min-width: $desktop) {
+      filter: drop-shadow(0 rem(8) rem(16) rgba(0, 0, 0, 0.3));
+    }
   }
 
   .chosen-results {
@@ -153,7 +157,11 @@
     padding: 0;
 
     li {
-      padding: 15px 16px;
+      padding: vw($mobile, 12px) vw($mobile, 16px);
+
+      @media screen and (min-width: $desktop) {
+        padding: rem(15) rem(16);
+      }
 
       &.highlighted {
         color: inherit;

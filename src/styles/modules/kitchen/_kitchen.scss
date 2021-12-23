@@ -7,10 +7,10 @@
   background-repeat: no-repeat;
 
   @media screen and (min-width: $desktop) {
-    padding-top: rem(94);
-    padding-bottom: rem(504);
-    background-image: radial-gradient(circle at 90% -20%, #b5b1c5, #42386b);
-    background-repeat: no-repeat;
+    margin-top: rem(-42);
+    padding-top: rem(42);
+    padding-bottom: rem(41);
+    background: none;
     overflow: hidden;
   }
 
@@ -18,11 +18,22 @@
     overflow: hidden;
   }
 
+  &__outer {
+
+    @media screen and (min-width: $desktop) {
+      padding-top: rem(148);
+      padding-bottom: rem(150);
+      background-color: #42386b;
+      background-image: radial-gradient(circle at 90% -20%, #b5b1c5, #42386b);
+      background-repeat: no-repeat;
+    }
+  }
+
   &__content {
 
     @media screen and (min-width: $desktop) {
       position: relative;
-      margin: 0 38% 0 0;
+      margin: 0 45% 0 0;
     }
   }
 
@@ -71,9 +82,9 @@
 
     @media screen and (min-width: $desktop) {
       position: absolute;
-      top: rem(-35);
-      right: rem(-752);
-      width: rem(800);
+      top: rem(-189);
+      right: rem(-829);
+      width: rem(797);
     }
 
     @media screen and (max-width: $desktop - 1) {

@@ -7,9 +7,9 @@
 
   @media screen and (min-width: $desktop) {
     padding-top: rem(140);
-    padding-bottom: rem(148);
-    background: url('../media/images/map@1x.jpg') no-repeat 160% top;
-    background-size: auto 120%;
+    padding-bottom: rem(179);
+    background: url('../media/images/map@1x.jpg') no-repeat 50% top;
+    //background-size: auto 120%;
 
     @supports (background-image: image-set(url('../media/images/map@1x.webp') 1x)) {
       background-image: url('../media/images/map@1x.webp');
