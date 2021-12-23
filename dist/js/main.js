@@ -5,12 +5,15 @@ $(document).ready(function () {
   });
 
   function modalClose() {
+    const ismobileContactsOpen = $('#header-burger').hasClass("header__burger--open")
     $('.layout').removeClass('layout--show');
-    $('body').removeClass('body--fixed');
+    if (!ismobileContactsOpen) {
+      $('body').removeClass('body--fixed');
+    }
   }
 
   $('.layout').click(function (e) {
-    if(!$(e.target).closest('.modal').length && !$(e.target).is('.modal')) {
+    if (!$(e.target).closest('.modal').length && !$(e.target).is('.modal')) {
       modalClose();
     }
   });
@@ -23,7 +26,7 @@ $(document).ready(function () {
   });
 
   $('body').click(function (e) {
-    if(!$(e.target).closest('.locale-dropdown').length && !$(e.target).is('.locale-dropdown')) {
+    if (!$(e.target).closest('.locale-dropdown').length && !$(e.target).is('.locale-dropdown')) {
       $('.locale-dropdown').removeClass('locales__item--active')
       $('.locale-dropdown__list').removeClass('locale-dropdown__list--expanded');
     }
@@ -76,4 +79,17 @@ $(document).ready(function () {
       }
     ]
   });
+
+  // mobile-contacts
+  const headerBurger = document.getElementById('header-burger');
+  headerBurger.addEventListener('click', mobileContacts);
+
+  function mobileContacts() {
+    const mobileContacts = document.getElementById('mobile-contacts');
+    const body = document.getElementById('body');
+    headerBurger.classList.toggle('header__burger--open');
+    mobileContacts.classList.toggle('mobile-contacts--open');
+    body.classList.toggle('body--fixed');
+  }
+
 });
