@@ -12,7 +12,7 @@
 
 </head>
 
-<body>
+<body id="body">
   <div class="page-layout">
     <header class="header">
   <div class="locales header__locales">
@@ -48,14 +48,39 @@
           <a class="header-nav__link" href="#">Контакты</a>
         </li>
       </ul>
-      <button class="header__burger" type="button">
+      <button class="header__burger" id="header-burger" type="button">
         <span></span>
       </button>
-      <button class="button button--secondary button--small header__btn js-open-modal" type="button">Запрос демоверсии</button>
+      <button class="button button--secondary button--small header__btn js-open-modal" type="button">Запрос
+        демоверсии</button>
     </div>
   </nav>
+  <div class="mobile-contacts" id="mobile-contacts">
+    <div class="mobile-contacts__wrap mobile-contacts__head">
+      <div class="content-wrapper mobile-contacts__wrapper">
+        <h2 class="mobile-contacts__title">Планируете начать?</h2>
+        <button class="button button--primary button--small mobile-contacts__btn js-open-modal" type="button">Запрос
+          демоверсии</button>
+      </div>
+    </div>
+    <div class="mobile-contacts__wrap mobile-contacts__info">
+      <div class="content-wrapper mobile-contacts__wrapper">
+        <div class="mobile-contacts__desc">
+          Можете связаться с нами в любом удобном для вас мессенджере или написать на почту <a
+            href="#">contacts@deliverest.io</a>
+        </div>
+        <ul class="contacts mobile-contacts__messengers">
+          <li class="contacts__item"><a class="contacts__link" href="#"><img src="media/icons/social/whatsapp.svg"
+                                                                             alt="instagram" class="contacts__link-icon">WhatsApp</a></li>
+          <li class="contacts__item"><a class="contacts__link" href="#"><img src="media/icons/social/viber.svg"
+                                                                             alt="viber" class="contacts__link-icon">Viber</a></li>
+          <li class="contacts__item"><a class="contacts__link" href="#"><img src="media/icons/social/telegram.svg"
+                                                                             alt="telegram" class="contacts__link-icon">Telegram</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </header>
-
     <main class="main">
       <section class="intro">
         <div class="content-wrapper content-wrapper--wide intro__wrapper">

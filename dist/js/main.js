@@ -5,12 +5,15 @@ $(document).ready(function () {
   });
 
   function modalClose() {
+    const ismobileContactsOpen = $('#header-burger').hasClass("header__burger--open")
     $('.layout').removeClass('layout--show');
-    $('body').removeClass('body--fixed');
+    if (!ismobileContactsOpen) {
+      $('body').removeClass('body--fixed');
+    }
   }
 
   $('.layout').click(function (e) {
-    if(!$(e.target).closest('.modal').length && !$(e.target).is('.modal')) {
+    if (!$(e.target).closest('.modal').length && !$(e.target).is('.modal')) {
       modalClose();
     }
   });
@@ -23,7 +26,7 @@ $(document).ready(function () {
   });
 
   $('body').click(function (e) {
-    if(!$(e.target).closest('.locale-dropdown').length && !$(e.target).is('.locale-dropdown')) {
+    if (!$(e.target).closest('.locale-dropdown').length && !$(e.target).is('.locale-dropdown')) {
       $('.locale-dropdown').removeClass('locales__item--active')
       $('.locale-dropdown__list').removeClass('locale-dropdown__list--expanded');
     }
@@ -62,7 +65,6 @@ $(document).ready(function () {
   $('.js-slider-mob').slick({
     mobileFirst: true,
     centerMode: true,
-    adaptiveHeight: true,
     //variableWidth: true,
     centerPadding: 0,
     slidesToShow: 1,
@@ -78,26 +80,16 @@ $(document).ready(function () {
     ]
   });
 
-  $('.chosen-select').chosen({width: '100%', disable_search: true});
+  // mobile-contacts
+  const headerBurger = document.getElementById('header-burger');
+  headerBurger.addEventListener('click', mobileContacts);
 
-  $('.chosen-select').on('change', function(event, params) {
-    $(this).next('.chosen-container').addClass('updated');
-    // can now use params.selected and params.deselected
-  });
-  $('.chosen-select').on('focus', function(event) {
-    $(this).trigger('chosen:activate');
-  });
-});
+  function mobileContacts() {
+    const mobileContacts = document.getElementById('mobile-contacts');
+    const body = document.getElementById('body');
+    headerBurger.classList.toggle('header__burger--open');
+    mobileContacts.classList.toggle('mobile-contacts--open');
+    body.classList.toggle('body--fixed');
+  }
 
-$(window).resize(function(){
-  $('.js-slider')[0].slick.refresh();
-  $('.js-slider2')[0].slick.refresh();
-});
-
-$(window).resize(function(){ // works only in new eventListener
-  $('.js-slider-mob').slick('resize');
-});
-
-$(window).on('orientationchange', function() {
-  $('.js-slider-mob').slick('reinit');
 });
