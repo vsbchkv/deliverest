@@ -62,6 +62,7 @@ $(document).ready(function () {
   $('.js-slider-mob').slick({
     mobileFirst: true,
     centerMode: true,
+    adaptiveHeight: true,
     //variableWidth: true,
     centerPadding: 0,
     slidesToShow: 1,
@@ -76,4 +77,27 @@ $(document).ready(function () {
       }
     ]
   });
+
+  $('.chosen-select').chosen({width: '100%', disable_search: true});
+
+  $('.chosen-select').on('change', function(event, params) {
+    $(this).next('.chosen-container').addClass('updated');
+    // can now use params.selected and params.deselected
+  });
+  $('.chosen-select').on('focus', function(event) {
+    $(this).trigger('chosen:activate');
+  });
+});
+
+$(window).resize(function(){
+  $('.js-slider')[0].slick.refresh();
+  $('.js-slider2')[0].slick.refresh();
+});
+
+$(window).resize(function(){ // works only in new eventListener
+  $('.js-slider-mob').slick('resize');
+});
+
+$(window).on('orientationchange', function() {
+  $('.js-slider-mob').slick('reinit');
 });

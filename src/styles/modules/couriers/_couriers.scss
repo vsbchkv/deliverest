@@ -106,6 +106,7 @@
   &__list-pic {
     width: vw($mobile, 24px);
     margin-right: vw($mobile, 15px);
+    flex-shrink: 0;
 
     @media screen and (min-width: $desktop) {
       width: rem(39);

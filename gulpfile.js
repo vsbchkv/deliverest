@@ -35,6 +35,10 @@ const config = {
     scripts: {
         src: 'src/js/**/*.js',
         dist: 'dist/js/'
+    },
+    plugins: {
+      src: 'src/plugins/**/*.*',
+      dist: 'dist/plugins/'
     }
 };
 
@@ -74,6 +78,12 @@ const styles = () => {
 const scripts = () => {
   return src(config.scripts.src)
     .pipe(dest(config.scripts.dist))
+    .pipe(server.stream());
+}
+
+const plugins = () => {
+  return src(config.plugins.src)
+    .pipe(dest(config.plugins.dist))
     .pipe(server.stream());
 }
 
@@ -132,7 +142,7 @@ const watchFiles = () => {
   gulp.watch('src/js/**/*.js', gulp.series(scripts));
 };
 
-let build = gulp.series(clean, gulp.parallel(html, styles, scripts, images, svg, fonts));
+let build = gulp.series(clean, gulp.parallel(html, styles, scripts, images, svg, fonts, plugins));
 let watch = gulp.series(build, gulp.parallel(watchFiles, load));
 
 exports.load = load;
