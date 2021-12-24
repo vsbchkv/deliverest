@@ -1,0 +1,56 @@
+.mobile-contacts {
+  $this: &;
+  background-color: $white;
+  position: absolute;
+  width: 100%;
+  max-height: 100vh;
+  transform: translateX(-100vw);
+  transition: transform 0.1s ease-in-out;
+
+  &:not(.mobile-contacts--open) {
+    > #{$this}__wrap {
+      display: none;
+    }
+  }
+
+  &--open {
+    transform: translateX(0);
+    z-index: 4;
+  }
+
+  &__head {
+    background-color: #010002;
+    padding-top: vw($mobile, 20px);
+    padding-bottom: vw($mobile, 32px);
+  }
+
+  &__title,
+  &__desc {
+    font-size: vw($mobile, 14px);
+  }
+
+  &__title {
+    color: $white;
+    font-weight: 700;
+    margin-bottom: vw($mobile, 16px);
+  }
+
+  &__btn {
+    padding-left: vw($mobile, 18px);
+    padding-right: vw($mobile, 18px);
+  }
+
+  &__info {
+    padding-top: vw($mobile, 26px);
+  }
+
+  &__desc {
+    color: $gray;
+    max-width: 91%;
+  }
+
+  &__messengers {
+    padding-top: vw($mobile, 27px);
+    // padding-bottom: vw($mobile, 27px);
+  }
+}

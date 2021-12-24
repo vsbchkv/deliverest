@@ -13,7 +13,7 @@
   }
 
   @media screen and (min-width: $desktop) {
-    $localesHeight: rem(50);
+    $localesHeight: rem(42);
     $headerHeight: rem(105);
     top: $localesHeight * -1;
     height: $headerHeight;
@@ -72,7 +72,7 @@
   }
 
   &:focus {
-    outline-style: solid;
+    outline: none;
   }
 
   & > span {
